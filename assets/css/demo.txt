@@ -1,3 +1,0 @@
-file này được sinh code từ scss
-
-file will created from SCSS
