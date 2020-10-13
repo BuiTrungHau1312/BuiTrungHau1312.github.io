@@ -22,6 +22,7 @@ body .app {
   height: 100%;
   display: flex;
   justify-content: flex-end;
+  overflow: hidden;
 }
 
 .slide-show .dot, .header .header-navbars, .header-navbars .navbars-menu .menu-list, .menu-list .list-item, .header-navbars .navbars-info, .navbars-info .info-social .social-list, .feature .feature-icon, .btn-contact, .item-statistical {
@@ -682,7 +683,8 @@ body .app {
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
-  background-image: url("https://images.pexels.com/photos/2433985/pexels-photo-2433985.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-image: url("/images/banner/banner6.jpg");
+  filter: brightness(0.9);
 }
 
 .statistical-container .statistical-list {

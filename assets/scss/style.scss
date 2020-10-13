@@ -23,6 +23,7 @@ body {
         height: 100%;
         display: flex;
         justify-content: flex-end;
+        overflow: hidden;
     }
 }
 
@@ -782,7 +783,8 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
-    background-image: url("https://images.pexels.com/photos/2433985/pexels-photo-2433985.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-image: url("/images/banner/banner6.jpg");
+    filter: brightness(0.9);
 
    .statistical-list {
        width: 100%;

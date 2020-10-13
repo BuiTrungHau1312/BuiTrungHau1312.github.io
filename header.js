@@ -21,7 +21,7 @@ var s = `
             <!-- title/name website -->
             <section class="navbars-title">
                 <a href="./index.html" class="navbars-title__link">
-                    <h1>Car Auto</h1>
+                    <h1>Apple Store</h1>
                 </a>
             </section>
             <!-- /title/name website -->
