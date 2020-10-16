@@ -1,3 +1,0 @@
-this is ACCOUNT : 
-    + Login 
-    + Registration
