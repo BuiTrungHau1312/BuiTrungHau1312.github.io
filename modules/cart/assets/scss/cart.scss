@@ -1,0 +1,125 @@
+@import '../../../../assets/scss/_variable.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-family: $font;
+    font-weight: 400;
+    font-size: 62.5%;
+    line-height: 1.8rem;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    font-size: 1.6rem;
+
+    .cart-container {
+        width: 1200px;
+        margin: 0 auto;
+
+        section.title h4 {
+            font-size: 3.2rem;
+            color: $text-color;
+            padding: 4.05rem 0 2rem 2rem;
+        }
+    }
+}
+
+.main-cart {
+    display: flex;
+    border-bottom: solid 1px #eceef2;
+    padding-bottom: 6rem;
+    margin-left: 1rem;
+
+    .main-cart__left {
+        width: 64.666666667%;
+        margin: 0 1%;
+    }
+    
+    .main-cart__right {
+        width: 31.333333333%;
+        margin: 0.28rem 0 0 4rem;
+        background-color:$color-underline;
+        user-select: none;
+        padding: 0.8rem 1.8rem 1.6rem 1.8rem;
+    }
+}
+
+.main-cart__left {
+
+    .container-left__table {
+        border: none;
+
+        .table-header {
+            background-color:$color-underline;
+        }
+        .table-header__title {
+            color: $text-color;
+            height: 4rem;
+            padding: 0.5rem 5.5rem 0.5rem 5.5rem;
+            border: solid 1px white ;
+        }
+        th:nth-child(3) {
+            width: 30rem;
+        }
+    }
+}
+
+.main-cart__right {
+
+    .cart-right__title{
+        font-size: 2.8rem;
+        color: $text-color;
+        padding: 2rem 0;
+    }
+
+    .car-right__list{
+        list-style: none;
+        color: $text-color;
+    }
+}
+
+.car-right__list {
+    .car-right__item {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.4rem 0;
+    }
+
+    .car-right__links {
+        display: block;
+        text-decoration: none;
+        color: $text-color;
+        cursor: default;
+    }
+}
+
+.main-cart__right {
+
+    .cart-right__btn {
+        background-color: $yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.6rem 0;
+        cursor: pointer;
+        margin-top: 4rem;
+        &:active {
+            background-color: $background;
+        }
+
+        .right-btn__links {
+            text-decoration: none;
+            display: block;
+            color: $white;
+            font-size: 2rem;
+            font-weight: 500;
+            user-select: none;
+            letter-spacing: 1px;
+        }
+    }
+}
