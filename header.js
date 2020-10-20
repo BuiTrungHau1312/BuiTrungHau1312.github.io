@@ -38,7 +38,7 @@ var s = `
                     </li>
 
                     <li class="list-item">
-                        <a href="" class="item-link">ABOUT</a>
+                        <a href="modules/about/about.html" class="item-link">ABOUT</a>
                     </li>
 
                     <li class="list-item">

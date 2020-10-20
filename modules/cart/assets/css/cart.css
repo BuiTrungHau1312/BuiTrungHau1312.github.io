@@ -36,12 +36,12 @@ body .cart-container section.title h4 {
 }
 
 .main-cart .main-cart__left {
-  width: 66.666666667%;
+  width: 64.666666667%;
   margin: 0 1%;
 }
 
 .main-cart .main-cart__right {
-  width: 33.333333333%;
+  width: 31.333333333%;
   margin: 0.28rem 0 0 4rem;
   background-color: #f5f7fa;
   user-select: none;

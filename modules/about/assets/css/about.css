@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Quicksand", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 62.5%;
+  line-height: 1.8rem;
+  box-sizing: border-box;
+}
+
+.active {
+  color: #FFC300 !important;
+}
+
+body {
+  width: 100%;
+}
+
+body .main {
+  width: 80%;
+  float: right;
+}
+
+body .main .all-content-about {
+  width: 100%;
+}
+
+body .main .all-content-about .top-about {
+  display: flex;
+  margin-top: 4rem;
+}
+
+.top-about .left-img {
+  width: 50%;
+  margin: 0 1% 0 0;
+}
+
+.top-about .right-contents {
+  width: 50%;
+  margin: 0 1%;
+  overflow: hidden;
+}
+
+.left-img .img__links {
+  background-image: url(/images/pic/pic2.jpg);
+  padding-top: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.right-contents__top .welcome {
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.7);
+  letter-spacing: 4px;
+  text-transform: lowercase;
+  position: relative;
+  top: -6px;
+}
+
+.right-contents__top .intro-text {
+  font-weight: 450;
+  font-size: 2rem;
+  position: relative;
+  padding: 2rem 0 4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.right-contents__top .intro-text::after {
+  content: "";
+  position: absolute;
+  border: 2px solid #FFC300;
+  width: 60px;
+  bottom: 44px;
+  left: 0.1rem;
+}
+
+.right-contents__top .desc1,
+.right-contents__top .desc2 {
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.right-contents__top .desc1 {
+  margin-bottom: 2rem;
+}
+
+.right-contents__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.right-contents__bottom .contents-bottom__text {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+}
+
+.container-dash {
+  display: flex;
+  margin-top: 4rem;
+}
+
+.container-dash .dash {
+  display: block;
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  cursor: default;
+  position: relative;
+}
+
+.container-dash .dash:nth-child(2) {
+  margin: 0 0 0 24rem;
+}
+
+.container-dash .dash:nth-child(3) {
+  margin: 0 0 0 24rem;
+}
+
+.container-dash .dash::after {
+  content: '';
+  width: 28rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.dash .around-icon::after {
+  content: '';
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  left: 0;
+  background-color: #FFF;
+  z-index: 1;
+}
+
+.dash .icon__links {
+  z-index: 2;
+  position: relative;
+  margin: 0 auto;
+  left: 13px;
+  top: 2px;
+}
+
+.dash:hover {
+  color: #FFC300;
+}
+
+.history {
+  margin: 6rem 0 0 0;
+}
+
+.history .his-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.history .his-title::after {
+  content: '';
+  position: absolute;
+  bottom: -44px;
+  left: 0.1rem;
+  bottom: -0.4rem;
+  width: 60px;
+  border: 2px solid #FFC300;
+}
+
+.history .his-content {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+/*# sourceMappingURL=about.css.map */
