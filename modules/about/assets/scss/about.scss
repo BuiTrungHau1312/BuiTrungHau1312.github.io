@@ -16,9 +16,11 @@ html {
 .active {
     color: $yellow!important;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 body {
     width: 100%;
-
     .main {
         width: 80%;
         float: right;
@@ -65,30 +67,18 @@ body {
 .right-contents__top {
     
     .welcome {
-        // font-size: 1.2rem;
-        font-weight: 300;
-        color: $text-color;
-        letter-spacing: 4px;
-        text-transform: lowercase;
-        position: relative;
-        top: -6px;
+        @extend %title-one;
     }
 
     .intro-text {
-        font-weight: 450;
-        font-size: 2rem;
+        @extend %title-two-h2;
         position: relative;
         padding: 2rem 0 4rem;
-        text-transform: uppercase;
-        letter-spacing: 2px;
     }
     .intro-text::after {
         content: "";
-        position: absolute;
-        border: 2px solid $yellow;
-        width: 60px;
-        bottom: 44px;
-        left: 0.1rem;
+        @extend %underline;
+        bottom: 3.7rem;
     }
 }
 
@@ -129,9 +119,7 @@ body {
     
 
     .dash {
-        display: block;
-        color: $text-color;
-        text-decoration: none;
+        @extend %tag-a;
         cursor: default;
         position: relative;
     }
@@ -184,23 +172,28 @@ body {
 // History 
 
     .history {
+        $width-left:40%;
         margin: 6rem 0 0 0;
+        display: flex;
+
+        .history-left {
+            width: $width-left;
+        }
+
+        .history-right {
+            width: calc(100%-$width-left);
+        }
+    }
+    .history-left {
         .his-title {
-            font-size: 1.8rem;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            @extend %title-two-h2;
             position: relative;
             margin-bottom: 4rem;
         }
         .his-title::after{
             content: '';
-            position: absolute;
-            bottom: -44px;
-            left: 0.1rem;
+            @extend %underline;
             bottom: -0.4rem;
-            width: 60px;
-            border: 2px solid $yellow;
         }
 
         .his-content {

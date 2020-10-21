@@ -1,6 +1,8 @@
-@import '../../../../assets/scss/variable';
+@import '../../../../assets/scss/variable.scss';
 
-
+::-webkit-scrollbar {
+    display: none;
+}
 body {
     width: 100%;
 }
@@ -10,30 +12,20 @@ body {
     margin-top: 4rem;
 }
 //  Title
-.title-contact {
+.contact-top {
 
-    .title__one {
-        color: $text-color;
-        font-size: 1.25rem;
-        text-transform: uppercase;
-        font-weight: 300;
-        letter-spacing: 2px;
+    .contact__title-one {
+        @extend %title-one;
     }
 
-    .title__two {
+    .contact__title-two {
+        @extend %title-two-h2;
         position: relative;
-        font-size: 2rem;
-        font-weight: 500;
-        text-transform: uppercase;
-        letter-spacing: 2px;
     }
-    .title__two::after {
+    .contact__title-two::after {
         content: '';
-        border: 2px solid $yellow;
-        position: absolute;
-        left: 0.1rem;
+        @extend %underline;
         bottom: -0.6rem;
-        width: 6rem;
     }
 }
 

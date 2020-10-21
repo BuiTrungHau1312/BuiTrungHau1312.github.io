@@ -50,7 +50,7 @@ var s = `
                     </li>
 
                     <li class="list-item">
-                        <a href="template/contact/contact.html" 
+                        <a href="/modules/contact/contact.html" 
                             class="item-link">CONTACT</a>
                     </li>
                 </ul>

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,mBAAmB,AAAC,CAChB,OAAO,CAAE,IAAI,CAChB,AAED,AAAA,IAAI,AAAC,CACD,KAAK,CAAE,IAAI,CACd,AAED,AAAA,kBAAkB,AAAC,CACf,KAAK,CAAE,GAAG,CACV,KAAK,CAAE,KAAK,CACf",
+    "sources": [
+        "../scss/service.scss",
+        "../../../../assets/scss/_variable.scss"
+    ],
+    "names": [],
+    "file": "service.min.css"
+}
