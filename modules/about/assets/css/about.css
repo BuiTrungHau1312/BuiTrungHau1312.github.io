@@ -69,7 +69,7 @@ body .main .all-content-about .top-about {
 
 .top-about .left-img {
   width: 50%;
-  margin: 0 1% 0 0;
+  margin: 0 1% 0 1.2rem;
 }
 
 .top-about .right-contents {
@@ -171,7 +171,7 @@ body .main .all-content-about .top-about {
 }
 
 .history {
-  margin: 6rem 0 0 0;
+  margin: 6rem 0 0 1.2rem;
   display: flex;
 }
 

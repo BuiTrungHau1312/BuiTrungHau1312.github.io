@@ -13,12 +13,15 @@ html {
     line-height: 1.8rem;
     box-sizing: border-box;
 }
+
 .active {
     color: $yellow!important;
 }
+
 ::-webkit-scrollbar {
     display: none;
 }
+
 body {
     width: 100%;
     .main {
@@ -40,7 +43,7 @@ body {
 
     .left-img {
         width: 50%;
-        margin: 0 1% 0 0;
+        margin: 0 1% 0 1.2rem;
     }
 
     .right-contents {
@@ -173,7 +176,7 @@ body {
 
     .history {
         $width-left:40%;
-        margin: 6rem 0 0 0;
+        margin: 6rem 0 0 1.2rem;
         display: flex;
 
         .history-left {

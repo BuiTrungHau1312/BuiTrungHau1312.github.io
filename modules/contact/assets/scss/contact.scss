@@ -13,6 +13,7 @@ body {
 }
 //  Title
 .contact-top {
+    margin-left: 1.2rem;
 
     .contact__title-one {
         @extend %title-one;
@@ -47,7 +48,7 @@ body {
 // Left
 .components {
     display: flex;
-    margin: 2rem 0;
+    margin: 2rem 1.2rem;
 
     .components__icon {
         $height: 8rem;

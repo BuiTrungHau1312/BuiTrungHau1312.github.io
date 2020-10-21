@@ -30,23 +30,23 @@ var s = `
             <menu class="navbars-menu">
                 <ul class="menu-list">
                     <li class="list-item active">
-                        <a href="" class="item-link">HOME</a>
+                        <a href="/index.html" class="item-link">HOME</a>
                     </li>
 
                     <li class="list-item">
-                        <a href="" class="item-link">PRODUCTS</a>
+                        <a href="/modules/product/product.html" class="item-link">PRODUCTS</a>
                     </li>
 
                     <li class="list-item">
-                        <a href="modules/about/about.html" class="item-link">ABOUT</a>
+                        <a href="/modules/about/about.html" class="item-link">ABOUT</a>
                     </li>
 
                     <li class="list-item">
-                        <a href="" class="item-link">SERVICES</a>
+                        <a href="/modules/service/service.html" class="item-link">SERVICES</a>
                     </li>
 
                     <li class="list-item">
-                        <a href="" class="item-link">BLOG</a>
+                        <a href="/modules/blog/blog.html" class="item-link">BLOG</a>
                     </li>
 
                     <li class="list-item">
