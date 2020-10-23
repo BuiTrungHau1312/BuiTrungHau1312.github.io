@@ -1,3 +1,32 @@
+.right-contents__top .welcome {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 1.6rem;
+}
+
+.right-contents__top .intro-text, .history-left .his-title {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.right-contents__top .intro-text::after, .history-left .his-title::after {
+  position: absolute;
+  left: 0.1rem;
+  width: 5rem;
+  border: 2px solid #FFC300;
+}
+
+.container-dash .dash {
+  display: block;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +43,10 @@ html {
 
 .active {
   color: #FFC300 !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 body {
@@ -36,7 +69,7 @@ body .main .all-content-about .top-about {
 
 .top-about .left-img {
   width: 50%;
-  margin: 0 1% 0 0;
+  margin: 0 1% 0 1.2rem;
 }
 
 .top-about .right-contents {
@@ -52,31 +85,14 @@ body .main .all-content-about .top-about {
   background-size: cover;
 }
 
-.right-contents__top .welcome {
-  font-weight: 300;
-  color: rgba(0, 0, 0, 0.7);
-  letter-spacing: 4px;
-  text-transform: lowercase;
-  position: relative;
-  top: -6px;
-}
-
 .right-contents__top .intro-text {
-  font-weight: 450;
-  font-size: 2rem;
   position: relative;
   padding: 2rem 0 4rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 .right-contents__top .intro-text::after {
   content: "";
-  position: absolute;
-  border: 2px solid #FFC300;
-  width: 60px;
-  bottom: 44px;
-  left: 0.1rem;
+  bottom: 3.7rem;
 }
 
 .right-contents__top .desc1,
@@ -109,9 +125,6 @@ body .main .all-content-about .top-about {
 }
 
 .container-dash .dash {
-  display: block;
-  color: rgba(0, 0, 0, 0.7);
-  text-decoration: none;
   cursor: default;
   position: relative;
 }
@@ -158,29 +171,29 @@ body .main .all-content-about .top-about {
 }
 
 .history {
-  margin: 6rem 0 0 0;
+  margin: 6rem 0 0 1.2rem;
+  display: flex;
 }
 
-.history .his-title {
-  font-size: 1.8rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+.history .history-left {
+  width: 40%;
+}
+
+.history .history-right {
+  width: calc(100%-$width-left);
+}
+
+.history-left .his-title {
   position: relative;
   margin-bottom: 4rem;
 }
 
-.history .his-title::after {
+.history-left .his-title::after {
   content: '';
-  position: absolute;
-  bottom: -44px;
-  left: 0.1rem;
   bottom: -0.4rem;
-  width: 60px;
-  border: 2px solid #FFC300;
 }
 
-.history .his-content {
+.history-left .his-content {
   font-size: 1.4rem;
   font-weight: 300;
 }

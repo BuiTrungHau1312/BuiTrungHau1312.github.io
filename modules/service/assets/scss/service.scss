@@ -1,0 +1,87 @@
+@import '../../../../assets/scss/variable';
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    width: 100%;
+}
+
+.service-container {
+    width: 80%;
+    float: right;
+    margin-top: 4rem;
+}
+
+// Service - Top
+
+.service-top {
+    margin-left: 1rem;
+
+    .service__title-one {
+        @extend %title-one;
+    }
+
+    .service__title-two {
+        @extend %title-two-h2;
+        position: relative;
+    }
+    .service__title-two::after {
+        content: '';
+        @extend %underline;
+        bottom: -0.4rem;
+    }
+}
+
+// End - Top
+
+// Service - Center 
+
+.service-center {
+    // background-color: red;
+    margin: 4rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    
+    .service-item {
+        display: flex;
+        width: 48%;
+        margin: 1rem 1.2rem;
+        justify-content: space-between;
+        align-items: center;
+
+        .item__icon {
+            width: 10rem;
+            height: 8rem;
+            background-color: $background-overlay;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1rem;
+
+            i {
+                font-size: 4rem;
+                color: $yellow;
+            }
+        }
+    }
+}
+
+.service-item__desc {
+    
+    .desc__title {
+        font-size: 1.4rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .desc__brief {
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: $text-color;
+        line-height: 1.6rem;
+    }
+}
+
+// End - Center

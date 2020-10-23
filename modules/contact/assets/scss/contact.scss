@@ -1,0 +1,123 @@
+@import '../../../../assets/scss/variable.scss';
+
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+    width: 100%;
+}
+.contact-container {
+    width: 80%;
+    float: right;
+    margin-top: 4rem;
+}
+//  Title
+.contact-top {
+    margin-left: 1.2rem;
+
+    .contact__title-one {
+        @extend %title-one;
+    }
+
+    .contact__title-two {
+        @extend %title-two-h2;
+        position: relative;
+    }
+    .contact__title-two::after {
+        content: '';
+        @extend %underline;
+        bottom: -0.6rem;
+    }
+}
+
+// End - Title
+
+// Center
+
+.contact-center {
+    display: flex;
+    width: 100%;
+    margin: 4rem 0;
+
+    .contact-center__left {
+        width: 50%;
+    }
+
+}
+
+// Left
+.components {
+    display: flex;
+    margin: 2rem 1.2rem;
+
+    .components__icon {
+        $height: 8rem;
+        width: $height;
+        height: $height;
+        background-color: $background-overlay;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+            font-size: 4rem;
+            color: $yellow;
+        }
+    }
+
+    .components__links {
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+        
+        a {
+            color: $yellow;
+            text-decoration: none;
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+        }
+
+        .text-address {
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: $text-color;
+        }
+    }
+}
+
+
+// Right
+%input{
+    width: 50rem;
+    height: 4rem;
+    outline: none;
+    border: none;
+    background-color: $background-overlay;
+    padding-left: 2rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: $text-color;    
+    margin: 0.5rem 0;
+}
+.input__contact {
+
+    .input__items {
+        @extend %input;
+    }
+    .input__items:focus {
+        background-color: $focus-input;
+    }
+}
+
+.all-contact-center {
+    margin: 1.8rem 0;
+    .desc-mess {
+        @extend %input;
+        height: 12rem;
+        padding-top: 0.8rem;
+    }
+    .desc-mess:focus {
+        background-color: $focus-input;
+    }
+}
+// End - Center

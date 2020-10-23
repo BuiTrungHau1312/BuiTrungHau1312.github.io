@@ -728,14 +728,14 @@ body {
 
 .footer-container {
     width: 100%;
-    padding: 4.8rem $padding-left-right;
+    padding: 1rem $padding-left-right;
     background: $background-overlay;
 
     .footer-content {
         padding: 3rem;
 
         h2 {
-            font-size: 3rem;
+            font-size: 2.8rem;
             color: #000;
             font-weight: 400;
             margin-bottom: 3rem;
@@ -744,9 +744,9 @@ body {
         p {
             width: 50%;
             color: rgba(0, 0, 0, 0.6);
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             line-height: 1.5;
-            margin-bottom: 2.5rem;
+            margin-bottom: 3rem;
         }
     }
 }
