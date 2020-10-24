@@ -14,3 +14,15 @@ Apple product management
 
 ### Backend APIs ###
 * [Apple Store APIs](https://github.com/Bacdong/applestore_dotnet_core)
+
+### Reference Website to build APIs ###
+
+* [Template Apple Store](https://buitrunghau1312.github.io/)
+
+### Note ###
+
+```
+    The template has many mistakes. Everyone see through and comment to be able edit.
+
+    Thank you
+```
