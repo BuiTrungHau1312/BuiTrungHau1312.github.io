@@ -21,6 +21,45 @@
   border: 2px solid #FFC300;
 }
 
+.pagination__list .pagination__item .pagination__links {
+  display: block;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.pagination {
+  margin: 4rem 0;
+}
+
+.pagination .pagination__list {
+  display: flex;
+}
+
+.pagination__list .pagination__item {
+  width: 3.5rem;
+  height: 3.5rem;
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.pagination__list .pagination__item:hover .pagination__links {
+  background-color: #FFC300;
+  color: #FFF;
+}
+
+.pagination__list .pagination__item .pagination__links {
+  font-size: 1.4rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: all linear 0.3s;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -32,11 +71,12 @@ body {
 .product-container {
   width: 80%;
   float: right;
-  margin-top: 4rem;
+  margin: 4rem 0rem 0 0;
+  overflow: hidden;
 }
 
 .product-top {
-  margin-left: 1.2rem;
+  margin-left: 2rem;
 }
 
 .product-top .product__title-two {
@@ -46,5 +86,63 @@ body {
 .product-top .product__title-two::after {
   content: '';
   bottom: -0.6rem;
+}
+
+.all-product {
+  margin: 4rem 0 0 2px;
+}
+
+.all-product .container-item {
+  margin-left: -12px;
+  margin-right: -12px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.all-product .container-item .product-item {
+  width: 24%;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.all-product .container-item .product-item:hover {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgba(223, 217, 217, 0.329);
+}
+
+.product-item .product-img {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0 0 0;
+}
+
+.product-item .product-img img {
+  height: 26rem;
+}
+
+.product-item .product-desc {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-item .product-desc .product-name {
+  font-size: 2.4rem;
+}
+
+.product-item .product-desc .product-name a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.product-item .product-desc .product-price {
+  color: #ff0000;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
 }
 /*# sourceMappingURL=product.css.map */
