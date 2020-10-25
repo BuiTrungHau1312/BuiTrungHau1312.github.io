@@ -1,5 +1,5 @@
 @import '../../../../assets/scss/_variable.scss';
-
+@import '../../../../assets/scss/base';
 * {
     margin: 0;
     padding: 0;
@@ -18,14 +18,28 @@ body {
     font-size: 1.6rem;
 
     .cart-container {
-        width: 1200px;
-        margin: 0 auto;
+        width: 80%;
+        float: right;
 
-        section.title h4 {
-            font-size: 3.2rem;
-            color: $text-color;
-            padding: 4.05rem 0 2rem 2rem;
+        .title {
+            margin: 4rem 0 4rem 1.4rem;
         }
+    }
+}
+
+.title {
+    .cart-title-brief {
+        @extend %title-one;
+    }
+    .title__text {
+        @extend %title-two-h2;
+        position: relative;
+    }
+
+    .title__text::after {
+        content: '';
+        @extend %underline;
+        bottom: -0.4rem;
     }
 }
 
@@ -33,7 +47,6 @@ body {
     display: flex;
     border-bottom: solid 1px #eceef2;
     padding-bottom: 6rem;
-    margin-left: 1rem;
 
     .main-cart__left {
         width: 64.666666667%;
@@ -42,10 +55,10 @@ body {
     
     .main-cart__right {
         width: 31.333333333%;
-        margin: 0.28rem 0 0 4rem;
+        margin: 0.28rem 0 0 0;
         background-color:$color-underline;
         user-select: none;
-        padding: 0.8rem 1.8rem 1.6rem 1.8rem;
+        padding: 0.8rem 1.8rem 4rem 1.8rem;
     }
 }
 
@@ -107,7 +120,9 @@ body {
         align-items: center;
         padding: 1.6rem 0;
         cursor: pointer;
-        margin-top: 4rem;
+        margin-top: 6rem;
+        transition: all linear 0.2s;
+        
         &:active {
             background-color: $background;
         }
@@ -120,6 +135,7 @@ body {
             font-weight: 500;
             user-select: none;
             letter-spacing: 1px;
+            
         }
     }
 }
