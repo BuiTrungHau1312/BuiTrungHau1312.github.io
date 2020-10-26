@@ -1,5 +1,5 @@
 @import '_variable.scss';
-
+@import 'base.scss';
 * {
     margin: 0;
     padding: 0;
@@ -76,7 +76,7 @@ body {
     width: 6rem;
     height: 0.4rem;
     content: '';
-    background: #FFC300;
+    background: $yellow;
 }
 
 %dots-div {
@@ -337,6 +337,7 @@ body {
             font-size: 1.9rem;
             letter-spacing: 1px;
             text-transform: capitalize;
+            
         }
 
         .register {
@@ -955,6 +956,130 @@ body {
 
    
 }
+// Sign in and Sign up 
+
+.all-login {
+    width: 90%;
+    height: 100vh;
+    float: right;
+    display: flex;
+    justify-content: center;
+    background-color: $focus-input;
+    transform: translateX(0%);
+
+    
+    .form-login {
+        width: 46rem;
+        margin-top: 10rem;
+        padding: 2rem 0 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.form-login {
+    
+
+    .input__elements {
+        width: 68%;
+        margin-top: 2rem;
+
+        .input__links {
+            outline: none;
+            font-size: 1.6rem;
+            color: $text-color;
+            width: 100%;
+            height: 4.6rem;
+            padding: 0 0 0 1.6rem;
+            border-radius: 4rem;
+            &:focus {
+                background-color: $focus-input;
+            }
+        }
+    }
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 0 -16rem;
+
+    .btn-remember {
+        margin: 0.3rem 0.8rem 0 0;
+        cursor: pointer;
+    }
+
+    .text-remember {
+        font-size: 1.4rem;
+        user-select: none;
+    }
+}
+
+.btn-login {
+    background-color: $yellow;
+    width: 68%;
+    border-radius: 4rem;
+    text-align: center;
+    overflow: hidden;
+    margin: 2rem 0 1.6rem;
+    user-select: none;
+
+    &:hover .btn-login__links{
+        background-color: $yellow-blur;
+    }
+    &:active .btn-login__links{
+        background-color: $background;
+        color: $white;
+    }
+
+    .btn-login__links {
+        @extend %tag-a;
+        width: 100%;
+        height: 100%;
+        padding: 1rem 0;
+        font-weight: 500;
+        font-size: 2rem;
+        transition: all linear 0.2s;
+    }
+}
+
+.forgot-pass {
+    width: 68%;
+    text-align: center;
+
+    .forgot__links {
+        @extend %tag-a;
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+        &:hover {
+            color: $yellow;
+        }
+    }
+}
+
+.no-account {
+    width: 68%;
+    display: flex;
+    margin-top: 1.2rem;
+    justify-content: center;
+
+    .no-account__brief {
+        font-size: 1.4rem;
+        padding-right: 0.4rem;
+        user-select: none;
+    }
+
+    .no-account__links {
+        @extend %tag-a;
+        color: $yellow;
+        font-weight: 500;
+        user-select: none;
+    }
+}
+
+
+//  End Sign in and Sign up 
 
 
 /* Tablet */
