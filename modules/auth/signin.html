@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apple Store | Your Cart</title>
-    
+    <title>Apple Store | Sign In</title>
+
     <!-- Css -->
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/icon.css">
-    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="stylesheet" href="assets/css/account.css">
 
     <!-- /css -->
 
@@ -18,9 +18,9 @@
         rel="stylesheet">
     <!-- /Goole Fonts -->
 
-
 </head>
 <body>
+    
     <!-- Header -->
 
     <header class="header box-shadow-on-mobile-tablet">
@@ -121,64 +121,58 @@
 
     <!-- /Header  -->
 
+
+
+    <!-- Login -->
     
-    <section class="cart-container">
-        <section class="title">
-            <span class="cart-title-brief">
-                welcome
-            </span>
-            <h2 class="title__text">
-                Your Cart
-            </h2>
-        </section>
+    <section class="all-login">
 
-        <main class="main-cart">
-            <section class="main-cart__left">
-                <table class="container-left__table">
-                    <thead class="table-header">
-                        <tr>
-                            <th class="table-header__title">Image</th>
-                            <th class="table-header__title">Name</th>
-                            <th class="table-header__title">Quantity</th>
-                            <th class="table-header__title">Price</th>
-                        </tr>
-                    </thead>
-                </table>
+        
+        <form class="form-login">
+            <h1 class="title-form">
+                Login
+            </h1>
+
+            <label class="input__elements">
+                <input class="input__links" type="text" placeholder="user name">
+            </label>
+
+            <label class="input__elements">
+                <input class="input__links" type="text" placeholder="password">
+            </label>
+
+            <label class="remember">
+                <input class="btn-remember" type="checkbox">
+                <span class="text-remember">Remember me</span>
+            </label>
+
+            <section class="btn-login">
+                <a class="btn-login__links" href="#">Login</a>
             </section>
 
-            <section class="main-cart__right">
-                <h4 class="cart-right__title">
-                    Cart Total
-                </h4>
-
-                <ul class="car-right__list">
-                    <li class="car-right__item">
-                        <a class="car-right__links" href="#">Subtotal: </a>
-                        <span class="main-right__span">$0</span>
-                    </li>
-
-                    <li class="car-right__item">
-                        <a class="car-right__links" href="#">Delivery(5%): </a>
-                        <span class="main-right__span">$0</span>
-                    </li>   
-
-                    <li class="car-right__item">
-                        <a class="car-right__links" href="#">Total: </a>
-                        <span class="main-right__span">$0</span>
-                    </li>   
-
-                </ul>
-
-                <div class="cart-right__btn">
-                    <a href="" class="right-btn__links">
-                        CHECKOUT
-                    </a>
-                </div>
+            <section class="forgot-pass">
+                <a href="forgot.html" class="forgot__links">
+                    Forgot password?
+                </a>
             </section>
-        </main>
 
+            <section class="no-account">
+                <span class="no-account__brief">
+                    Don't have an account?
+
+                </span>
+                
+                <a href="signup.html" class="no-account__links">
+                    Registration Now
+                </a>
+            </section>
+        </form>
 
     </section>
+
+    <!-- /Login -->
+
+
 
 </body>
 </html>

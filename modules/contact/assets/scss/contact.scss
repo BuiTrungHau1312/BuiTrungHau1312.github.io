@@ -23,11 +23,12 @@ body {
     .contact__title-two {
         @extend %title-two-h2;
         position: relative;
-    }
-    .contact__title-two::after {
+        
+        &::after {
         content: '';
-        @extend %underline;
-        bottom: -0.6rem;
+            @extend %underline;
+            bottom: -0.6rem;
+        }
     }
 }
 
@@ -119,6 +120,24 @@ body {
     }
     .desc-mess:focus {
         background-color: $focus-input;
+    }
+
+    .send-mess {
+        @extend %tag-a;
+        user-select: none;
+        background-color: $yellow;
+        width: 14rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        text-align: center;
+        padding: 0.2rem 0;
+        transition: all linear 0.2s;
+        text-transform: uppercase;
+
+        &:active {
+            background-color: $background;
+            color: $white;
+        }
     }
 }
 // End - Center
