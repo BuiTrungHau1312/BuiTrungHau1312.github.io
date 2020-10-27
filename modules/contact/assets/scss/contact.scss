@@ -23,11 +23,12 @@ body {
     .contact__title-two {
         @extend %title-two-h2;
         position: relative;
-    }
-    .contact__title-two::after {
+        
+        &::after {
         content: '';
-        @extend %underline;
-        bottom: -0.6rem;
+            @extend %underline;
+            bottom: -0.6rem;
+        }
     }
 }
 

@@ -77,11 +77,12 @@ body {
         @extend %title-two-h2;
         position: relative;
         padding: 2rem 0 4rem;
-    }
-    .intro-text::after {
-        content: "";
-        @extend %underline;
-        bottom: 3.7rem;
+        
+        &::after {
+            content: "";
+            @extend %underline;
+            bottom: 3.7rem;
+        }
     }
 }
 
@@ -125,6 +126,15 @@ body {
         @extend %tag-a;
         cursor: default;
         position: relative;
+
+        &::after {
+            content: '';
+            width: 28rem;
+            border: 1px solid $blur;
+            position: absolute;
+            top: 50%;
+            left: 0;
+        }
     }
     .dash:nth-child(2) {
         margin: 0 0 0 24rem;
@@ -133,14 +143,7 @@ body {
         margin: 0 0 0 24rem;
         
     }
-    .dash::after {
-        content: '';
-        width: 28rem;
-        border: 1px solid $blur;
-        position: absolute;
-        top: 50%;
-        left: 0;
-    }
+    
 }
 
 .dash {
@@ -164,8 +167,10 @@ body {
         margin: 0 auto;
         left: 13px;
         top: 2px;
-    }&:hover {
+
+        &:hover {
         color: $yellow;
+        }
     }
 }
 
@@ -192,11 +197,12 @@ body {
             @extend %title-two-h2;
             position: relative;
             margin-bottom: 4rem;
-        }
-        .his-title::after{
-            content: '';
-            @extend %underline;
-            bottom: -0.4rem;
+        
+            &::after{
+                content: '';
+                @extend %underline;
+                bottom: -0.4rem;
+            }
         }
 
         .his-content {

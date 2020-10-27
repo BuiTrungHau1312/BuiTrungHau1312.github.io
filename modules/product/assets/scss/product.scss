@@ -28,11 +28,12 @@ body {
     .product__title-two {
         @extend %title-two-h2;
         position: relative;
-    }
-    .product__title-two::after {
-        content: '';
-        @extend %underline;
-        bottom: -0.6rem;
+        
+        &::after {
+            content: '';
+            @extend %underline;
+            bottom: -0.6rem;
+        }
     }
 }
 

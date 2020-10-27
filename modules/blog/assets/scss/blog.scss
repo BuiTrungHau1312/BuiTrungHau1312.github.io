@@ -22,12 +22,13 @@ body {
     .blog__title-two {
         @extend %title-two-h2;
         position: relative;
-    }
-    .blog__title-two::after {
-        content: '';
-        @extend %underline;
-        position: absolute;
-        bottom: -0.4rem;
+        
+        &::after {
+            content: '';
+            @extend %underline;
+            position: absolute;
+            bottom: -0.4rem;
+        }
     }
 }
 

@@ -34,13 +34,14 @@ body {
     .title__text {
         @extend %title-two-h2;
         position: relative;
+        
+        &::after {
+            content: '';
+            @extend %underline;
+            bottom: -0.4rem;
+        }
     }
 
-    .title__text::after {
-        content: '';
-        @extend %underline;
-        bottom: -0.4rem;
-    }
 }
 
 .main-cart {
