@@ -56,7 +56,8 @@ body {
         $height: 8rem;
         width: $height;
         height: $height;
-        background-color: $background-overlay;
+        // background-color: $background-overlay;
+        background-color: red;
         display: flex;
         align-items: center;
         justify-content: center;
