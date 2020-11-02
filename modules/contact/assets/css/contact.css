@@ -4,7 +4,7 @@
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 2px;
-  line-height: 1.6rem;
+  line-height: 1.3rem;
 }
 
 .contact-top .contact__title-two {
@@ -12,6 +12,7 @@
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 2px;
+  margin-top: 0.4rem;
 }
 
 .contact-top .contact__title-two::after {
@@ -52,6 +53,14 @@
 .pagination__list .pagination__item:hover .pagination__links {
   background-color: #FFC300;
   color: #FFF;
+}
+
+.pagination__list .pagination__item:first-child .pagination__links {
+  padding-bottom: 0.4rem;
+}
+
+.pagination__list .pagination__item:last-child .pagination__links {
+  padding-bottom: 0.4rem;
 }
 
 .pagination__list .pagination__item .pagination__links {
@@ -111,7 +120,7 @@ body {
 .components .components__icon {
   width: 8rem;
   height: 8rem;
-  background-color: red;
+  background-color: #FAFAFA;
   display: flex;
   align-items: center;
   justify-content: center;

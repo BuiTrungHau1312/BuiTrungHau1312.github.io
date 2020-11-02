@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: inherit;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 
 html {
     font-family: $font;
@@ -17,6 +20,7 @@ html {
 body {
     width: 100%;
     font-size: 1.6rem;
+    // margin-top: 10rem;
 
     .app {
         user-select: none;
@@ -318,6 +322,7 @@ body {
     width: 100%;
     display: flex;
     height: 9rem;
+    // display: none;
 
     .div-title {
         width: 50%;

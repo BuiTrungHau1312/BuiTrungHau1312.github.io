@@ -31,6 +31,14 @@
   color: #FFF;
 }
 
+.pagination__list .pagination__item:first-child .pagination__links {
+  padding-bottom: 0.4rem;
+}
+
+.pagination__list .pagination__item:last-child .pagination__links {
+  padding-bottom: 0.4rem;
+}
+
 .pagination__list .pagination__item .pagination__links {
   display: flex;
   align-items: center;
@@ -47,6 +55,10 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 html {

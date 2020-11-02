@@ -42,30 +42,34 @@ body {
 
 .service-center {
     // background-color: red;
-    margin: 4rem 0;
+    margin: 4rem -12px;
     display: flex;
     flex-wrap: wrap;
     
-    .service-item {
+    .service-col {
+        flex: 0 0 50%;
+        padding: 0 12px;
+    }
+}
+
+.service-item {
+    display: flex;
+    margin: 2rem 1.2rem;
+    justify-content: space-between;
+    align-items: center;
+
+    .item__icon {
+        width: 10rem;
+        height: 8.5rem;
+        background-color: $background-overlay;
         display: flex;
-        width: 48%;
-        margin: 2rem 1.2rem;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        margin-right: 1rem;
 
-        .item__icon {
-            width: 10rem;
-            height: 8.5rem;
-            background-color: $background-overlay;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 1rem;
-
-            i {
-                font-size: 4rem;
-                color: $yellow;
-            }
+        i {
+            font-size: 4rem;
+            color: $yellow;
         }
     }
 }
