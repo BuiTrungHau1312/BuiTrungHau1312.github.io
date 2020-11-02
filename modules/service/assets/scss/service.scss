@@ -49,13 +49,13 @@ body {
     .service-item {
         display: flex;
         width: 48%;
-        margin: 1rem 1.2rem;
+        margin: 2rem 1.2rem;
         justify-content: space-between;
         align-items: center;
 
         .item__icon {
             width: 10rem;
-            height: 8rem;
+            height: 8.5rem;
             background-color: $background-overlay;
             display: flex;
             justify-content: center;
