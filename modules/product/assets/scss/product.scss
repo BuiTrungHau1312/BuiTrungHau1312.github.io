@@ -178,12 +178,16 @@ body {
             flex-wrap: wrap;
 
             .product-col {
+                @extend %tag-a;
                 padding-left: 12px;
                 padding-right: 12px;
                 flex: 0 0 19.2%;
                 margin-bottom: 24px;
+                position: relative;
 
-                
+                &:hover .btn-product{
+                    display: flex;
+                }
             }
         }
 
@@ -191,16 +195,19 @@ body {
 }
 
 .product-item {
+    @extend %tag-a;
     height: 100%;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     transition: all linear 0.14s;
+    padding-bottom: 4rem;
     &:hover {
         background-color: $background-overlay;
         box-shadow :0 1px 5px $blur;
     }
+    
     .product-img {
         height: 20%;
         display: flex;
@@ -235,6 +242,40 @@ body {
             cursor: default;
             user-select: none;
         }
+    }
+}
+
+.btn-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 1rem;
+    display: none;
+
+    .detail-product, 
+    .buy-product     {   
+        @extend %tag-a;
+        flex: 0 0 44%;
+        background-color: $yellow;
+        text-align: center;
+        padding: 0.5rem 0;
+        border-radius: 4rem;
+        font-weight: 400;
+        color: $white;
+        transition: all linear 0.14s;
+        &:hover {
+            opacity: 0.8;
+        }
+        &:active {
+            background-color: $background;
+
+        }
+    }
+
+    .buy-product {
+        margin-right: 2rem;
     }
 }
 

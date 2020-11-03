@@ -5,7 +5,7 @@
 
 // Sign in and Sign up 
 
-.all-login {
+.all-sign-in {
     width: 90%;
     height: 100vh;
     float: right;
@@ -15,13 +15,14 @@
     // transform: translateX(0%);
 
     
-    .form-login {
+    .form-sign-in {
         width: 46rem;
         margin-top: 10rem;
         padding: 2rem 0 6rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
 
         .title-form {
             width: 68%;
@@ -35,7 +36,7 @@
     }
 }
 
-.form-login {
+.form-sign-in {
     
 
     .input__elements {
@@ -73,7 +74,7 @@
     }
 }
 
-.btn-login {
+.btn-sign-in {
     background-color: $yellow;
     width: 68%;
     height: 5rem;
@@ -83,15 +84,15 @@
     margin: 2rem 0 1.6rem;
     user-select: none;
 
-    &:hover .btn-login__links{
+    &:hover .btn-sign-in__links{
         background-color: $yellow-blur;
     }
-    &:active .btn-login__links{
+    &:active .btn-sign-in__links{
         background-color: $background;
         color: $white;
     }
 
-    .btn-login__links {
+    .btn-sign-in__links {
         @extend %tag-a;
         width: 100%;
         height: 100%;
@@ -140,6 +141,18 @@
     }
 }
 
+.back-sign-in {
+    position: absolute;
+    bottom: 28rem;
+
+    .btn__back-sign-in {
+        @extend %tag-a;
+        text-align: center;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
 
 //  End Sign in and Sign up 
 
@@ -147,7 +160,9 @@
 // Form Forgot Pass
 
 .brief__forgot {
-    color: $text-color;
+    color: $text-color;display: none;
 }
-
+.back__forgot {
+    margin-top: -17rem;
+}
 // End Forgot Pass
