@@ -1,4 +1,4 @@
-.pagination__list .pagination__item .pagination__links, .btn-login .btn-login__links, .forgot-pass .forgot__links, .no-account .no-account__links {
+.pagination__list .pagination__item .pagination__links, .btn-sign-in .btn-sign-in__links, .forgot-pass .forgot__links, .no-account .no-account__links, .back-sign-in .btn__back-sign-in {
   display: block;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
@@ -31,6 +31,14 @@
   color: #FFF;
 }
 
+.pagination__list .pagination__item:first-child .pagination__links {
+  padding-bottom: 0.4rem;
+}
+
+.pagination__list .pagination__item:last-child .pagination__links {
+  padding-bottom: 0.4rem;
+}
+
 .pagination__list .pagination__item .pagination__links {
   display: flex;
   align-items: center;
@@ -43,7 +51,7 @@
   transition: all linear 0.14s;
 }
 
-.all-login {
+.all-sign-in {
   width: 90%;
   height: 100vh;
   float: right;
@@ -52,40 +60,41 @@
   background-color: rgba(223, 217, 217, 0.329);
 }
 
-.all-login .form-login {
+.all-sign-in .form-sign-in {
   width: 46rem;
   margin-top: 10rem;
   padding: 2rem 0 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
-.all-login .form-login .title-form {
+.all-sign-in .form-sign-in .title-form {
   width: 68%;
   padding: 1rem 0;
   position: relative;
   font-size: 3rem;
-  text-align: center;
   user-select: none;
+  margin-left: 0.4rem;
 }
 
-.form-login .input__elements {
+.form-sign-in .input__elements {
   width: 68%;
   margin-top: 2rem;
 }
 
-.form-login .input__elements .input__links {
+.form-sign-in .input__elements .input__links {
   outline: none;
   font-size: 1.6rem;
   color: rgba(0, 0, 0, 0.7);
   width: 100%;
-  height: 4.6rem;
+  height: 5rem;
   padding: 0 0 0 1.6rem;
   border-radius: 4rem;
 }
 
-.form-login .input__elements .input__links:focus {
+.form-sign-in .input__elements .input__links:focus {
   background-color: rgba(223, 217, 217, 0.329);
 }
 
@@ -105,9 +114,10 @@
   user-select: none;
 }
 
-.btn-login {
+.btn-sign-in {
   background-color: #FFC300;
   width: 68%;
+  height: 5rem;
   border-radius: 4rem;
   text-align: center;
   overflow: hidden;
@@ -115,22 +125,22 @@
   user-select: none;
 }
 
-.btn-login:hover .btn-login__links {
+.btn-sign-in:hover .btn-sign-in__links {
   background-color: #eecb5a8e;
 }
 
-.btn-login:active .btn-login__links {
+.btn-sign-in:active .btn-sign-in__links {
   background-color: #2C2C2C;
   color: #FFF;
 }
 
-.btn-login .btn-login__links {
+.btn-sign-in .btn-sign-in__links {
   width: 100%;
   height: 100%;
   padding: 1rem 0;
   font-weight: 500;
   font-size: 2rem;
-  transition: all linear 0.2s;
+  transition: all linear 0.14s;
 }
 
 .forgot-pass {
@@ -144,7 +154,7 @@
 }
 
 .forgot-pass .forgot__links:hover {
-  color: #FFC300;
+  text-decoration: underline;
 }
 
 .no-account {
@@ -155,18 +165,39 @@
 }
 
 .no-account .no-account__brief {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   padding-right: 0.4rem;
   user-select: none;
 }
 
 .no-account .no-account__links {
-  color: #FFC300;
   font-weight: 500;
   user-select: none;
 }
 
+.no-account .no-account__links:hover {
+  color: #FFC300;
+}
+
+.back-sign-in {
+  position: absolute;
+  bottom: 28rem;
+}
+
+.back-sign-in .btn__back-sign-in {
+  text-align: center;
+}
+
+.back-sign-in .btn__back-sign-in:hover {
+  text-decoration: underline;
+}
+
 .brief__forgot {
   color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.back__forgot {
+  margin-top: -17rem;
 }
 /*# sourceMappingURL=account.css.map */

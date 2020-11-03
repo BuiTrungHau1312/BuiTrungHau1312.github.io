@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: inherit;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 
 html {
     font-family: $font;
@@ -17,6 +20,7 @@ html {
 body {
     width: 100%;
     font-size: 1.6rem;
+    // margin-top: 10rem;
 
     .app {
         user-select: none;
@@ -318,6 +322,8 @@ body {
     width: 100%;
     display: flex;
     height: 9rem;
+    // display: none;
+    margin-top: 2rem;
 
     .div-title {
         width: 50%;
@@ -361,11 +367,13 @@ body {
 
     .carousel-item {
         display: none;
+        margin-top: 4rem;
         
         img {
             width: 100%;
             margin-right: 0;
-            min-height: 100vh;
+            // min-height: 100vh;
+            height: 70rem;
             object-fit: fill;
         }
     }
@@ -380,6 +388,10 @@ body {
 
     #dot3 {
         top: 83%;
+    }
+
+    #dot4 {
+        top: 86%;
     }
 
     .dot {
@@ -426,12 +438,26 @@ body {
             background-color: transparent;
         }
     }
+
+    #slide-4:checked {
+        ~ div.item4 {
+            display: block;
+            animation: anim-carousel-show .5s ease-in-out;
+        }
+
+        ~ #dot4 {
+            border-radius: 50%;
+            border: 2px solid $yellow;
+            background-color: transparent;
+        }
+    }
 }
 
 .welcome-container {
     display: flex;
     width: 100%;
     padding: $padding-container;
+    margin-left: -3.9rem;
 
     .welcome-right,
     .welcome-left {
@@ -467,6 +493,7 @@ body {
 .services-container {
     width: 100%;
     padding: $padding-container;
+    margin-left: -3.9rem;
 
     .heading {
         padding: 0 $padding-left-right;
@@ -576,6 +603,7 @@ body {
     width: 100%;
     padding: $padding-container;
     margin-bottom: 14rem;
+    margin-left: -3.9rem;
 
     .heading {
         height: 14rem;
@@ -647,6 +675,7 @@ body {
 .read-container {
     width: 100%;
     padding: $padding-container;
+    margin-left: -3.9rem;
 
     .heading {
         padding: 0 $padding-left-right;
