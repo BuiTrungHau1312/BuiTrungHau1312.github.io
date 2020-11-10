@@ -161,10 +161,6 @@ body {
 
     .container-item {
         width: 100%;
-        // margin-left: -12px;
-        // margin-right: -12px;
-        // display: flex;
-        // flex-wrap: wrap;
 
         .no-product {
             flex: 0 0 16.666666667%;
@@ -276,10 +272,20 @@ body {
 
     .buy-product {
         margin-right: 2rem;
+        background-color: $white;
+        color: $yellow;
+        &:hover {
+            text-decoration: underline;
+        }
+        // &:active {
+        //     color: $white;
+        // }
     }
 }
 
 // End - All Product
+
+
 
 // End product
 
@@ -288,3 +294,92 @@ body {
 }
 
 // End
+
+
+
+
+
+
+
+// Resposive
+
+// table and mobile
+@media (max-width: 1024px) {
+
+}
+
+
+// tablet
+@media (min-width: 740px) and (max-width: 1023px) {
+
+    .product-container {
+        width: 100%;
+    }
+
+    .all-product {
+        margin: 4rem 0 0 0;
+        width: 100%;
+    
+        .container-item {
+            width: 100%;
+    
+            .no-product {
+                flex: 0 0 0%;
+            }
+    
+            .product {
+                flex: 0 0 100%;
+                margin-left: -12px;
+                margin-right: -12px;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 1.4rem;
+                .product-col {
+                    padding-left: 12px;
+                    padding-right: 12px;
+                    flex: 0 0 33.333333333%;
+                    margin-bottom: 24px;
+                    position: relative;
+    
+                    // &:hover .btn-product{
+                    //     display: flex;
+                    // }
+                }
+            }
+        }
+    }
+
+    .product-item {
+
+        .product-img {
+
+            img {
+                height: 10rem;
+            }
+        }
+    }
+
+
+    .btn-product {
+        display: flex;
+
+        .detail-product {
+
+        }
+        
+        .buy-product {
+            background-color: $white;
+            color: $yellow;
+        }
+    }
+
+    
+    
+}
+
+
+// mobile
+@media (max-width: 739px) {
+    
+}
+
