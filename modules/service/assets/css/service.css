@@ -90,7 +90,7 @@ body {
 }
 
 .service-top {
-  margin-left: 1rem;
+  padding: 60px 40px;
 }
 
 .service-top .service__title-two {
@@ -146,5 +146,36 @@ body {
   font-weight: 300;
   color: rgba(0, 0, 0, 0.7);
   line-height: 1.6rem;
+}
+
+.service-container .service-grid {
+  margin: 60px 40px;
+}
+
+.service-grid {
+  margin-top: 60px;
+  width: 100%;
+  border: black solid 1px;
+  background-color: red;
+}
+
+.service-grid .grid-row {
+  width: 100%;
+  display: flex;
+  height: 220px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.service-grid .grid-row .row-img {
+  flex-basis: 32%;
+  height: 100%;
+  border: black solid 1px;
+}
+
+.row-img .img-blog {
+  width: 100%;
+  height: 60%;
+  border: black solid 1px;
 }
 /*# sourceMappingURL=service.css.map */

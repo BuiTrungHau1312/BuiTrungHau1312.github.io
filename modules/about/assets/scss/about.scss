@@ -216,3 +216,89 @@ body {
 
 
 // End - History
+/*Mobile app*/
+@media screen and ( max-width: 1023px) {
+    
+
+    * {
+        margin: 10px 0 0 3px;
+        padding: 0;
+        box-sizing: inherit;
+    }
+
+    .header-navbars {
+        min-width: 30rem;
+        transform: translateX(-150%);
+        opacity: 0;
+        transition: all linear 0.26s;
+    }
+    .box-shadow-on-mobile-tablet {
+        box-shadow: 0 1px 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .open-nav {
+        opacity: 1;
+        display: block;
+    }
+
+    .close-nav {
+        opacity: 0;
+        display: block;
+    }
+
+    body {
+        .main{
+            width: 100%;
+            align-items: center;
+        }
+    } 
+
+    .top-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .left-img {
+            align-items: center;
+            width : 90%;
+        }
+        .right-contents {
+            width: 90%;
+        }
+        .container-dash {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    .dash-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .dash {
+            align-items: center;
+            padding-bottom: 20px;
+            position: relative;
+        }
+    }
+
+    .right-contents__bottom {
+        .contents-bottom__text {
+            position: relative;
+            height: 10px;
+            margin: -24px 0 48px;
+        }
+    }
+    
+    .history {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        .history-left {
+            width: 90%;
+        }
+    }
+}
+
+/* Tablet */
