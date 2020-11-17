@@ -151,4 +151,34 @@ body {
   color: rgba(0, 0, 0, 0.7);
   line-height: 1.6rem;
 }
+
+.service-container .service-grid {
+  width: 100%;
+  border: black solid 1px;
+  margin-top: 40px;
+}
+
+.service-container .service-grid .service-grid-row {
+  width: 32%;
+  height: 420px;
+}
+
+.service-container .service-grid .service-grid-row .gird-row-img {
+  width: 350px;
+  height: 420px;
+  display: flex;
+  border: black solid 1px;
+}
+
+.gird-row-img .img-service {
+  width: 350px;
+  height: 170px;
+  border: black solid 1px;
+}
+
+.gird-row-img .img-service_desc {
+  width: 90%;
+  background-color: #fafafa;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=service.css.map */
