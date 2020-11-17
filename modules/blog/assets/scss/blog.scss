@@ -40,24 +40,22 @@ body {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-        
-        .blog-item {
-            width: 31.333333333%;
-            background-color: $background-overlay;
-            margin: 1.2rem 12px;
-    
-            .blog-img {
-                background-image: 
-                url('/images/banner/banner1.jpg');
-                padding-top: 100%;
-                background-repeat: no-repeat;
-                background-size: contain;
-                cursor: pointer;
-            }
-            
-        }
-    }
 
+    .blog-item {
+        width: 31.333333333%;
+        background-color: $background-overlay;
+        margin: 1.2rem 12px;
+
+        .blog-img {
+            background-image: 
+            url('/images/banner/banner1.jpg');
+            padding-top: 100%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            cursor: pointer;
+        }
+        
+    }
 } 
 
 .blog-info {
