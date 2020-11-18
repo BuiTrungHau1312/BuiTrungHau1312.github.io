@@ -29,12 +29,15 @@
 }
 
 .pagination {
+  width: 100%;
   margin: 4rem 0;
+  display: block;
 }
 
 .pagination .pagination__list {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   margin-right: 8rem;
 }
 
@@ -43,6 +46,7 @@
   height: 3.5rem;
   list-style: none;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
   margin: 0 0.5rem;
   display: flex;
   justify-content: center;
@@ -244,5 +248,60 @@ body .main .all-content-about .top-about {
 .history-left .his-content {
   font-size: 1.4rem;
   font-weight: 300;
+}
+
+@media screen and (max-width: 1023px) {
+  .header {
+    min-width: 30rem;
+    transform: translateX(-150%);
+    opacity: 0;
+    transition: all linear 0.26s;
+  }
+  .all-content-about {
+    width: 115%;
+    margin: 30px -50px;
+  }
+  .top-about {
+    display: flex;
+    flex-direction: column;
+  }
+  .top-about .left-img {
+    width: 100%;
+  }
+  .top-about .right-contents {
+    width: 100%;
+  }
+  .container-dash {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .container-dash .dash:nth-child(2) {
+    margin: 90px 0;
+    display: block;
+  }
+  .container-dash .dash:nth-child(3) {
+    margin: 20px 0;
+    display: block;
+  }
+  .right-contents__bottom {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 34px 0;
+  }
+  .right-contents__bottom .contents-bottom__text {
+    margin: 25px 0;
+    padding: 28px 0;
+  }
+  .history {
+    width: 100%;
+  }
+  .history .history-left {
+    width: 100%;
+  }
+  .history .history-left .his-content {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=about.css.map */
