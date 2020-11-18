@@ -15,17 +15,18 @@ html {
 }
 body {
     width: 100%;
-    font-size: 1.6rem;
+}
 
-    .cart-container {
-        width: 80%;
-        float: right;
 
-        .title {
-            margin: 4rem 0 4rem 1.4rem;
-        }
+.cart-container {
+    width: 80%;
+    float: right;
+
+    .title {
+        margin: 4rem 0 4rem 1.4rem;
     }
 }
+
 
 .title {
     .cart-title-brief {
@@ -77,7 +78,7 @@ body {
             padding: 0.5rem 5.5rem 0.5rem 5.5rem;
             border: solid 1px white ;
         }
-        th:nth-child(3) {
+        th:nth-child(2) {
             width: 30rem;
         }
     }
@@ -139,4 +140,25 @@ body {
             
         }
     }
+}
+
+
+// Resposive
+
+// table and mobile
+@media (max-width: 1023px) {
+    .cart-container {
+        width: 100%;
+    }
+}
+
+// tablet
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+// mobile 
+
+@media (max-width: 739px) {
+
 }

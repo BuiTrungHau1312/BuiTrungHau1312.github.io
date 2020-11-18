@@ -91,15 +91,14 @@ html {
 
 body {
   width: 100%;
-  font-size: 1.6rem;
 }
 
-body .cart-container {
+.cart-container {
   width: 80%;
   float: right;
 }
 
-body .cart-container .title {
+.cart-container .title {
   margin: 4rem 0 4rem 1.4rem;
 }
 
@@ -146,7 +145,7 @@ body .cart-container .title {
   border: solid 1px white;
 }
 
-.main-cart__left .container-left__table th:nth-child(3) {
+.main-cart__left .container-left__table th:nth-child(2) {
   width: 30rem;
 }
 
@@ -197,5 +196,11 @@ body .cart-container .title {
   font-weight: 500;
   user-select: none;
   letter-spacing: 1px;
+}
+
+@media (max-width: 1023px) {
+  .cart-container {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=cart.css.map */

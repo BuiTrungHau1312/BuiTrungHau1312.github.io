@@ -379,6 +379,9 @@ body {
   .category-container .category-right {
     display: none;
   }
+  .product-end {
+    padding-bottom: 4rem;
+  }
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {
