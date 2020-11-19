@@ -86,6 +86,7 @@
 
 .form-sign-in .input__elements .input__links {
   outline: none;
+  border: 1px solid #FFC300;
   font-size: 1.6rem;
   color: rgba(0, 0, 0, 0.7);
   width: 100%;
@@ -192,6 +193,10 @@
   text-decoration: underline;
 }
 
+.brief__forgot {
+  text-align: center;
+}
+
 .back__forgot {
   margin-top: -18rem;
 }
@@ -206,6 +211,9 @@
   }
   .all-sign-in .form-sign-in {
     margin-top: 2rem;
+  }
+  .all-sign-in .form-sign-in .title-form {
+    font-size: 2.2rem;
   }
   .header-navbars {
     transform: translateX(-200%);
@@ -252,6 +260,9 @@
   }
   .back-sign-in {
     bottom: 20%;
+  }
+  .back__forgot {
+    margin-top: -8rem;
   }
 }
 /*# sourceMappingURL=account.css.map */

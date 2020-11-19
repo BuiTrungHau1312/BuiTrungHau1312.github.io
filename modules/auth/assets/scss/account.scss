@@ -45,6 +45,7 @@
 
         .input__links {
             outline: none;
+            border: 1px solid $yellow;
             font-size: 1.6rem;
             color: $text-color;
             width: 100%;
@@ -157,6 +158,9 @@
 
 
 // Form Forgot Pass
+.brief__forgot{
+    text-align: center;
+}
 
 .back__forgot {
     margin-top: -18rem;
@@ -178,6 +182,10 @@
 
         .form-sign-in {
             margin-top: 2rem;
+
+            .title-form {
+                font-size: 2.2rem;
+            }
         }
     }
 
@@ -239,5 +247,8 @@
 
     .back-sign-in {
         bottom: 20%;
+    }
+    .back__forgot {
+        margin-top: -8rem;
     }
 }
