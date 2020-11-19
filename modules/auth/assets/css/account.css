@@ -192,13 +192,12 @@
   text-decoration: underline;
 }
 
-.brief__forgot {
-  color: rgba(0, 0, 0, 0.7);
-  display: none;
-}
-
 .back__forgot {
   margin-top: -18rem;
+}
+
+.back-to-product {
+  margin: 0 0 -30rem -1rem;
 }
 
 @media (max-width: 1023px) {

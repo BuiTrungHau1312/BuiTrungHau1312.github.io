@@ -272,5 +272,9 @@ body {
     width: 100%;
     margin: 10rem 0 0 14rem;
   }
+  .car-right__list .car-right__item {
+    justify-content: space-between;
+    width: 20rem;
+  }
 }
 /*# sourceMappingURL=cart.css.map */
