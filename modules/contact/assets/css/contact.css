@@ -19,7 +19,7 @@
   position: absolute;
   left: 0.1rem;
   width: 5rem;
-  border: 2px solid #FFC300;
+  border: 1px solid #FFC300;
 }
 
 .pagination__list .pagination__item .pagination__links, .all-contact-center .send-mess {

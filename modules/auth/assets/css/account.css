@@ -181,7 +181,7 @@
 
 .back-sign-in {
   position: absolute;
-  bottom: 28rem;
+  bottom: 24rem;
 }
 
 .back-sign-in .btn__back-sign-in {
@@ -198,6 +198,61 @@
 }
 
 .back__forgot {
-  margin-top: -17rem;
+  margin-top: -18rem;
+}
+
+@media (max-width: 1023px) {
+  .all-sign-in {
+    width: 100%;
+  }
+  .all-sign-in .form-sign-in {
+    margin-top: 2rem;
+  }
+  .header-navbars {
+    transform: translateX(-200%);
+  }
+}
+
+@media (max-width: 739px) {
+  .remember {
+    margin: 1rem 0 0 -6rem;
+  }
+  .no-account {
+    flex-direction: column;
+    margin-top: 0.6rem;
+  }
+  .no-account .no-account__brief {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .no-account .no-account__links {
+    text-align: center;
+  }
+  .form-sign-in {
+    font-size: 1.4rem;
+  }
+  .form-sign-in .input__elements {
+    margin-top: 1.6rem;
+  }
+  .form-sign-in .input__elements .input__links {
+    height: 4rem;
+    font-size: 1.4rem;
+  }
+  .btn-sign-in {
+    height: 4rem;
+    margin: 1rem 0 1rem;
+  }
+  .btn-sign-in .btn-sign-in__links {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .forgot-pass {
+    font-size: 1.4rem;
+  }
+  .back-sign-in {
+    bottom: 20%;
+  }
 }
 /*# sourceMappingURL=account.css.map */

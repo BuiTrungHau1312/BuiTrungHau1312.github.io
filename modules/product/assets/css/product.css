@@ -19,7 +19,7 @@
   position: absolute;
   left: 0.1rem;
   width: 5rem;
-  border: 2px solid #FFC300;
+  border: 1px solid #FFC300;
 }
 
 .pagination__list .pagination__item .pagination__links, .top-replace .replace-cart__links, .author-replace .replace__sign-in .replace-sign-in__links, .category-product__list .category-product__item .category-product__links, .category-right .cart__links, .author .author__sign-in .sign-in__links, .all-product .container-item .product .product-col, .product-item, .btn-product .detail-product,
