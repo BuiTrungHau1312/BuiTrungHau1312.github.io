@@ -269,12 +269,14 @@ body {
     margin: 0 1%;
   }
   .main-cart .main-cart__right {
-    width: 100%;
+    width: 60rem;
     margin: 10rem 0 0 14rem;
   }
+  .main-cart__right .cart-right__title {
+    padding: 4rem 0;
+  }
   .car-right__list .car-right__item {
-    justify-content: space-between;
-    width: 20rem;
+    width: 26rem;
   }
 }
 /*# sourceMappingURL=cart.css.map */
