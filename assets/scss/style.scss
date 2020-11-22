@@ -260,6 +260,10 @@ body {
     transition: all linear 0.24s;
 }
 
+.icon-color-exit {
+    color: $background-overlay;
+}
+
 #hidden-show-nav:checked {
     ~ .header {
         opacity: 1;
@@ -271,13 +275,13 @@ body {
         // opacity: 0;
         opacity: 1;
         display: block;
-        left: calc(4% + 32rem);
+        left: calc(4% + 22rem);
     }
 
     ~ .open-nav {
         opacity: 0;
         display: block;
-        left: calc(4% + 32rem);
+        left: calc(4% + 22rem);
     }
 
     ~ .nav-overlay {

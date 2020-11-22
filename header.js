@@ -5,11 +5,11 @@ var s = `
     <input type="checkbox" id="hidden-show-nav" hidden>
 
     <label class="open-nav" for="hidden-show-nav">
-        <i class="icon-sun"></i>
+        <i class="icon-menu"></i>
     </label>
 
     <label class="close-nav" for="hidden-show-nav">
-        <i class="icon-exit"></i>
+        <i class="icon-exit icon-color-exit"></i>
     </label>
     <!-- nav mobile  -->
 

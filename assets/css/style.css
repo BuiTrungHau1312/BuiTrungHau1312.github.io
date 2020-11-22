@@ -284,6 +284,10 @@ body .app {
   transition: all linear 0.24s;
 }
 
+.icon-color-exit {
+  color: #FAFAFA;
+}
+
 #hidden-show-nav:checked ~ .header {
   opacity: 1;
   transform: translateX(0);
@@ -292,13 +296,13 @@ body .app {
 #hidden-show-nav:checked ~ .close-nav {
   opacity: 1;
   display: block;
-  left: calc(4% + 32rem);
+  left: calc(4% + 22rem);
 }
 
 #hidden-show-nav:checked ~ .open-nav {
   opacity: 0;
   display: block;
-  left: calc(4% + 32rem);
+  left: calc(4% + 22rem);
 }
 
 #hidden-show-nav:checked ~ .nav-overlay {
