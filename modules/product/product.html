@@ -1,807 +1,790 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apple Store | Product</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apple Store | Product</title>
 
-        <!-- Css -->
-        <link rel="stylesheet" href="/assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/product.css">
-        <link rel="stylesheet" href="/assets/css/icon.css">
-        <link rel="stylesheet" href="/style.css">
-        <!-- /css -->
-    
-        <!-- Google Fonts -->
-        <link 
-            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" 
-            rel="stylesheet">
-        <!-- /Goole Fonts -->
+            <!-- Css -->
+            <link rel="stylesheet" href="/assets/css/style.css">
+            <link rel="stylesheet" href="assets/css/product.css">
+            <link rel="stylesheet" href="/assets/css/icon.css">
+            <link rel="stylesheet" href="/style.css">
+            <!-- /css -->
+        
+            <!-- Google Fonts -->
+            <link 
+                href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" 
+                rel="stylesheet">
+            <!-- /Goole Fonts -->
 
-</head>
+    </head>
 
-    <!-- nav mobile  -->
-    <input type="checkbox" id="hidden-show-nav" hidden>
+    <body>
+        <!-- nav mobile  -->
+        <input type="checkbox" id="hidden-show-nav" hidden>
 
-    <label class="open-nav" for="hidden-show-nav">
-        <i class="icon-menu "></i>
-    </label>
+        <label class="open-nav" for="hidden-show-nav">
+            <i class="icon-menu "></i>
+        </label>
 
-    <label class="close-nav" for="hidden-show-nav">
-        <i class="icon-exit icon-color-exit"></i>
-    </label>
-    <!-- nav mobile  -->
+        <label class="close-nav" for="hidden-show-nav">
+            <i class="icon-exit icon-color-exit"></i>
+        </label>
+        <!-- nav mobile  -->
 
-    <label for="hidden-show-nav" class="nav-overlay"></label>
+        <label for="hidden-show-nav" class="nav-overlay"></label>
 
 
-    <!-- Header -->
+        <!-- Header -->
+        <header class="header box-shadow-on-mobile-tablet">
+            <nav class="header-navbars">
 
-    <header class="header box-shadow-on-mobile-tablet">
-        <nav class="header-navbars">
-
-            <!-- title/name website -->
-            <section class="navbars-title">
-                <a href="/index.html" class="navbars-title__link">
-                    <h1>Apple Store</h1>
-                </a>
-            </section>
-            <!-- /title/name website -->
-
-            <!-- list category -->
-            <menu class="navbars-menu">
-                <ul class="menu-list">
-                    <li class="list-item active">
-                        <a href="/index.html" class="item-link">HOME</a>
-                    </li>
-
-                    <li class="list-item">
-                        <a href="/modules/product/product.html" class="item-link">PRODUCTS</a>
-                    </li>
-
-                    <li class="list-item">
-                        <a href="/modules/about/about.html" class="item-link">ABOUT</a>
-                    </li>
-
-                    <li class="list-item">
-                        <a href="/modules/service/service.html" class="item-link">SERVICES</a>
-                    </li>
-
-                    <li class="list-item">
-                        <a href="/modules/blog/blog.html" class="item-link">BLOG</a>
-                    </li>
-
-                    <li class="list-item">
-                        <a href="/modules/contact/contact.html" 
-                            class="item-link">CONTACT</a>
-                    </li>
-                </ul>
-            </menu>
-            <!-- /list category -->
-
-            <!-- footer -->
-            <footer class="navbars-info">
-                <!-- copyright -->
-                <section class="info-brief">
-                    <p>
-                        &copy; Copyright &copy;
-                        <script type="text/javascript">
-                            let currentDay = new Date();
-                            let currentYear = currentDay.getFullYear();
-                            document.write(currentYear);
-                        </script>
-                        All right reserved | Development by MyTeam.
-                    </p>
+                <!-- title/name website -->
+                <section class="navbars-title">
+                    <a href="/index.html" class="navbars-title__link">
+                        <h1>Apple Store</h1>
+                    </a>
                 </section>
-                <!-- /copyright -->
+                <!-- /title/name website -->
 
-                <!-- social contact -->
-                <menu class="info-social">
-                    <ul class="social-list">
-                        <li class="social-item">
-                            <a href="https://www.facebook.com/DuongBacDong.2000/" 
-                                class="social-link" target="_blank">
-                                <i class="icon-facebook"></i>
-                            </a>
+                <!-- list category -->
+                <menu class="navbars-menu">
+                    <ul class="menu-list">
+                        <li class="list-item active">
+                            <a href="/index.html" class="item-link">HOME</a>
                         </li>
 
-                        <li class="social-item">
-                            <a href="https://www.twitter.com/Bacdong/" 
-                                class="social-link" target="_blank">
-                                <i class="icon-twitter"></i>
-                            </a>
+                        <li class="list-item">
+                            <a href="/modules/product/product.html" class="item-link">PRODUCTS</a>
                         </li>
 
-                        <li class="social-item">
-                            <a href="https://www.instagram.com/" 
-                                class="social-link" target="_blank">
-                                <i class="icon-instagram"></i>
-                            </a>
+                        <li class="list-item">
+                            <a href="/modules/about/about.html" class="item-link">ABOUT</a>
                         </li>
 
-                        <li class="social-item">
-                            <a href="tel:+84915272291" class="social-link" target="_blank">
-                                <i class="icon-telegram"></i>
-                            </a>
+                        <li class="list-item">
+                            <a href="/modules/service/service.html" class="item-link">SERVICES</a>
+                        </li>
+
+                        <li class="list-item">
+                            <a href="/modules/blog/blog.html" class="item-link">BLOG</a>
+                        </li>
+
+                        <li class="list-item">
+                            <a href="/modules/contact/contact.html" 
+                                class="item-link">CONTACT</a>
                         </li>
                     </ul>
                 </menu>
-                <!-- /social contact -->
-            </footer>
-            <!-- /footer -->
+                <!-- /list category -->
 
-        </nav>
-    </header>
+                <!-- footer -->
+                <footer class="navbars-info">
+                    <!-- copyright -->
+                    <section class="info-brief">
+                        <p>
+                            &copy; Copyright &copy;
+                            <script type="text/javascript">
+                                let currentDay = new Date();
+                                let currentYear = currentDay.getFullYear();
+                                document.write(currentYear);
+                            </script>
+                            All right reserved | Development by MyTeam.
+                        </p>
+                    </section>
+                    <!-- /copyright -->
 
-    <!-- /Header  -->
+                    <!-- social contact -->
+                    <menu class="info-social">
+                        <ul class="social-list">
+                            <li class="social-item">
+                                <a href="https://www.facebook.com/DuongBacDong.2000/" 
+                                    class="social-link" target="_blank">
+                                    <i class="icon-facebook"></i>
+                                </a>
+                            </li>
 
+                            <li class="social-item">
+                                <a href="https://www.twitter.com/Bacdong/" 
+                                    class="social-link" target="_blank">
+                                    <i class="icon-twitter"></i>
+                                </a>
+                            </li>
 
+                            <li class="social-item">
+                                <a href="https://www.instagram.com/" 
+                                    class="social-link" target="_blank">
+                                    <i class="icon-instagram"></i>
+                                </a>
+                            </li>
 
+                            <li class="social-item">
+                                <a href="tel:+84915272291" class="social-link" target="_blank">
+                                    <i class="icon-telegram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </menu>
+                    <!-- /social contact -->
+                </footer>
+                <!-- /footer -->
 
-    <!-- Product -->
-    <main class="product-container">
+            </nav>
+        </header>
 
-        <section class="all-top-product">
+        <!-- Product -->
+        <main class="product-container">
 
-            <!-- Top Title -->
-            <section class="product-top">
-                <span class="product__title-one">
-                    product
-                </span>
+            <section class="all-top-product">
 
-                <h2 class="product__title-two">
-                    All Product
-                </h2>
-            </section>
+                <!-- Top Title -->
+                <section class="product-top">
+                    <span class="product__title-one">
+                        product
+                    </span>
 
-            <!-- Top Replace -->
-            <section class="top-replace">
-                <div class="author-replace">
-                    <div class="replace__sign-in">
-                        <a href="/modules/auth/signin.html" class="replace-sign-in__links">
-                            Sign in
-                        </a>
-                    </div>
-
-                
-                    <a href="/modules/auth/signup.html" class="replace-sign-up__links">
-                        Sign up
-                    </a>
-                </div>
-
-                <a href="/modules/cart/cart.html" class="replace-cart__links">
-                    <img class="cart-img" src="/icon/icon-cart.jpg">
-                </a>
-            </section>
-            
-        </section>
-
-
-        <!-- Category Name  -->
-        <section class="category-container">
-
-            <section class="category-left">
-                <ul class="category-product__list">
-                    <li class="category-product__item">
-                        <a href="" class="category-product__links">
-                            iPhone
-                        
-                        </a>
-                    </li>
-
-                    <li class="category-product__item">
-                        <a href="" class="category-product__links">
-                            iPad
-
-                        </a>
-                    </li>
-
-                    <li class="category-product__item">
-                        <a href="" class="category-product__links">
-                            Macbook
-
-                        </a>
-                    </li>
-
-                    <li class="category-product__item">
-                        <a href="" class="category-product__links">
-                            Watch
-
-                        </a>
-                    </li>
-
-                </ul>
-            </section>
-
-            <section class="category-right">
-
-                <div class="author">
-                    <div class="author__sign-in">
-                        <a href="/modules/auth/signin.html" class="sign-in__links">
-                            Sign in
-                        </a>
-                    </div>
-
-                    <a href="/modules/auth/signup.html" class="sign-up__links">
-                        Sign up
-                    </a>
-                </div>
-
-                <a href="/modules/cart/cart.html" class="cart__links">
-                    <img class="cart-img" src="/icon/icon-cart.jpg">
-                </a>
-            </section>
-
-        </section>
-
-
-        <!-- Show Product -->
-        <section class="all-product">
-            
-            <section class="container-item">
-                <section class="no-product">
-
+                    <h2 class="product__title-two">
+                        All Product
+                    </h2>
                 </section>
 
-                <section class="product">
-
-                    <a href="#" class="product__links">
-                        <section href="#" class="product-col">
-
-                            <section href="#" class="product-item">
-                                    <div class="product-img">
-                                        <img src="/images/product/p1.png" >
-                                    </div>
-            
-                                    <section class="product-desc">
-                                        <h3 class="product-name">
-                                            <a href="#" class="product__links">
-                                                iPhone 11
-                                            </a>
-                                        </h3>
-                                        <span class="product-price">
-                                            $125.00
-                                        </span>
-
-                                    </section>
-                                            
-                            </section>
-                            
-                            <section class="btn-product">
-                                <a href="#" class="detail-product">
-                                    Detail
-                                </a>
-                                <a href="#" class="buy-product">
-                                    Buy now
-                                </a>
-                            </section>
-                        </section>
-                    </a>
-
-                    <a href="#" class="product__links">
-                        <section href="#" class="product-col">
-
-                            <section href="#" class="product-item">
-                                    <div class="product-img">
-                                        <img src="/images/product/p1.png" >
-                                    </div>
-            
-                                    <section class="product-desc">
-                                        <h3 class="product-name">
-                                            <a href="#" class="product__links">
-                                                iPhone 11
-                                            </a>
-                                        </h3>
-                                        <span class="product-price">
-                                            $125.00
-                                        </span>
-
-                                    </section>
-                                            
-                            </section>
-                            
-                            <section class="btn-product">
-                                <a href="#" class="detail-product">
-                                    Detail
-                                </a>
-                                <a href="#" class="buy-product">
-                                    Buy now
-                                </a>
-                            </section>
-                        </section>
-                    </a>
-
-                    <a href="#" class="product__links">
-                        <section href="#" class="product-col">
-
-                            <section href="#" class="product-item">
-                                    <div class="product-img">
-                                        <img src="/images/product/p1.png" >
-                                    </div>
-            
-                                    <section class="product-desc">
-                                        <h3 class="product-name">
-                                            <a href="#" class="product__links">
-                                                iPhone 11
-                                            </a>
-                                        </h3>
-                                        <span class="product-price">
-                                            $125.00
-                                        </span>
-
-                                    </section>
-                                            
-                            </section>
-                            
-                            <section class="btn-product">
-                                <a href="#" class="detail-product">
-                                    Detail
-                                </a>
-                                <a href="#" class="buy-product">
-                                    Buy now
-                                </a>
-                            </section>
-                        </section>
-                    </a>
-
-                    <a href="#" class="product__links">
-                        <section href="#" class="product-col">
-
-                            <section href="#" class="product-item">
-                                    <div class="product-img">
-                                        <img src="/images/product/p1.png" >
-                                    </div>
-            
-                                    <section class="product-desc">
-                                        <h3 class="product-name">
-                                            <a href="#" class="product__links">
-                                                iPhone 11
-                                            </a>
-                                        </h3>
-                                        <span class="product-price">
-                                            $125.00
-                                        </span>
-
-                                    </section>
-                                            
-                            </section>
-                            
-                            <section class="btn-product">
-                                <a href="#" class="detail-product">
-                                    Detail
-                                </a>
-                                <a href="#" class="buy-product">
-                                    Buy now
-                                </a>
-                            </section>
-                        </section>
-                    </a>
-
-                    <a href="#" class="product__links">
-                        <section href="#" class="product-col">
-
-                            <section href="#" class="product-item">
-                                    <div class="product-img">
-                                        <img src="/images/product/p1.png" >
-                                    </div>
-            
-                                    <section class="product-desc">
-                                        <h3 class="product-name">
-                                            <a href="#" class="product__links">
-                                                iPhone 11
-                                            </a>
-                                        </h3>
-                                        <span class="product-price">
-                                            $125.00
-                                        </span>
-
-                                    </section>
-                                            
-                            </section>
-                            
-                            <section class="btn-product">
-                                <a href="#" class="detail-product">
-                                    Detail
-                                </a>
-                                <a href="#" class="buy-product">
-                                    Buy now
-                                </a>
-                            </section>
-                        </section>
-                    </a>
-
-                    <a href="#" class="product__links">
-                        <section href="#" class="product-col">
-
-                            <section href="#" class="product-item">
-                                    <div class="product-img">
-                                        <img src="/images/product/p1.png" >
-                                    </div>
-            
-                                    <section class="product-desc">
-                                        <h3 class="product-name">
-                                            <a href="#" class="product__links">
-                                                iPhone 11
-                                            </a>
-                                        </h3>
-                                        <span class="product-price">
-                                            $125.00
-                                        </span>
-
-                                    </section>
-                                            
-                            </section>
-                            
-                            <section class="btn-product">
-                                <a href="#" class="detail-product">
-                                    Detail
-                                </a>
-                                <a href="#" class="buy-product">
-                                    Buy now
-                                </a>
-                            </section>
-                        </section>
-                    </a>
-
-                    <a href="#" class="product__links">
-                        <section href="#" class="product-col">
-
-                            <section href="#" class="product-item">
-                                    <div class="product-img">
-                                        <img src="/images/product/p1.png" >
-                                    </div>
-            
-                                    <section class="product-desc">
-                                        <h3 class="product-name">
-                                            <a href="#" class="product__links">
-                                                iPhone 11
-                                            </a>
-                                        </h3>
-                                        <span class="product-price">
-                                            $125.00
-                                        </span>
-
-                                    </section>
-                                            
-                            </section>
-                            
-                            <section class="btn-product">
-                                <a href="#" class="detail-product">
-                                    Detail
-                                </a>
-                                <a href="#" class="buy-product">
-                                    Buy now
-                                </a>
-                            </section>
-                        </section>
-                    </a>
-
-                    <a href="#" class="product__links">
-                        <section href="#" class="product-col">
-
-                            <section href="#" class="product-item">
-                                    <div class="product-img">
-                                        <img src="/images/product/p1.png" >
-                                    </div>
-            
-                                    <section class="product-desc">
-                                        <h3 class="product-name">
-                                            <a href="#" class="product__links">
-                                                iPhone 11
-                                            </a>
-                                        </h3>
-                                        <span class="product-price">
-                                            $125.00
-                                        </span>
-
-                                    </section>
-                                            
-                            </section>
-                            
-                            <section class="btn-product">
-                                <a href="#" class="detail-product">
-                                    Detail
-                                </a>
-                                <a href="#" class="buy-product">
-                                    Buy now
-                                </a>
-                            </section>
-                        </section>
-                    </a>
-
-                    <a href="#" class="product__links">
-                        <section href="#" class="product-col">
-
-                            <section href="#" class="product-item">
-                                    <div class="product-img">
-                                        <img src="/images/product/p1.png" >
-                                    </div>
-            
-                                    <section class="product-desc">
-                                        <h3 class="product-name">
-                                            <a href="#" class="product__links">
-                                                iPhone 11
-                                            </a>
-                                        </h3>
-                                        <span class="product-price">
-                                            $125.00
-                                        </span>
-
-                                    </section>
-                                            
-                            </section>
-                            
-                            <section class="btn-product">
-                                <a href="#" class="detail-product">
-                                    Detail
-                                </a>
-                                <a href="#" class="buy-product">
-                                    Buy now
-                                </a>
-                            </section>
-                        </section>
-                    </a>
-
-                    <a href="#" class="product__links">
-                        <section href="#" class="product-col">
-
-                            <section href="#" class="product-item">
-                                    <div class="product-img">
-                                        <img src="/images/product/p1.png" >
-                                    </div>
-            
-                                    <section class="product-desc">
-                                        <h3 class="product-name">
-                                            <a href="#" class="product__links">
-                                                iPhone 11
-                                            </a>
-                                        </h3>
-                                        <span class="product-price">
-                                            $125.00
-                                        </span>
-
-                                    </section>
-                                            
-                            </section>
-                            
-                            <section class="btn-product">
-                                <a href="#" class="detail-product">
-                                    Detail
-                                </a>
-                                <a href="#" class="buy-product">
-                                    Buy now
-                                </a>
-                            </section>
-                        </section>
-                    </a>
-
-                    <a href="#" class="product__links">
-                        <section href="#" class="product-col">
-
-                            <section href="#" class="product-item">
-                                    <div class="product-img">
-                                        <img src="/images/product/p1.png" >
-                                    </div>
-            
-                                    <section class="product-desc">
-                                        <h3 class="product-name">
-                                            <a href="#" class="product__links">
-                                                iPhone 11
-                                            </a>
-                                        </h3>
-                                        <span class="product-price">
-                                            $125.00
-                                        </span>
-
-                                    </section>
-                                            
-                            </section>
-                            
-                            <section class="btn-product">
-                                <a href="#" class="detail-product">
-                                    Detail
-                                </a>
-                                <a href="#" class="buy-product">
-                                    Buy now
-                                </a>
-                            </section>
-                        </section>
-                    </a>
-
-                    <a href="#" class="product__links">
-                        <section href="#" class="product-col">
-
-                            <section href="#" class="product-item">
-                                    <div class="product-img">
-                                        <img src="/images/product/p1.png" >
-                                    </div>
-            
-                                    <section class="product-desc">
-                                        <h3 class="product-name">
-                                            <a href="#" class="product__links">
-                                                iPhone 11
-                                            </a>
-                                        </h3>
-                                        <span class="product-price">
-                                            $125.00
-                                        </span>
-
-                                    </section>
-                                            
-                            </section>
-                            
-                            <section class="btn-product">
-                                <a href="#" class="detail-product">
-                                    Detail
-                                </a>
-                                <a href="#" class="buy-product">
-                                    Buy now
-                                </a>
-                            </section>
-                        </section>
-                    </a>
-
-                    <a href="#" class="product__links">
-                        <section href="#" class="product-col">
-
-                            <section href="#" class="product-item">
-                                    <div class="product-img">
-                                        <img src="/images/product/p1.png" >
-                                    </div>
-            
-                                    <section class="product-desc">
-                                        <h3 class="product-name">
-                                            <a href="#" class="product__links">
-                                                iPhone 11
-                                            </a>
-                                        </h3>
-                                        <span class="product-price">
-                                            $125.00
-                                        </span>
-
-                                    </section>
-                                            
-                            </section>
-                            
-                            <section class="btn-product">
-                                <a href="#" class="detail-product">
-                                    Detail
-                                </a>
-                                <a href="#" class="buy-product">
-                                    Buy now
-                                </a>
-                            </section>
-                        </section>
-                    </a>
-
-                    <a href="#" class="product__links">
-                        <section href="#" class="product-col">
-
-                            <section href="#" class="product-item">
-                                    <div class="product-img">
-                                        <img src="/images/product/p1.png" >
-                                    </div>
-            
-                                    <section class="product-desc">
-                                        <h3 class="product-name">
-                                            <a href="#" class="product__links">
-                                                iPhone 11
-                                            </a>
-                                        </h3>
-                                        <span class="product-price">
-                                            $125.00
-                                        </span>
-
-                                    </section>
-                                            
-                            </section>
-                            
-                            <section class="btn-product">
-                                <a href="#" class="detail-product">
-                                    Detail
-                                </a>
-                                <a href="#" class="buy-product">
-                                    Buy now
-                                </a>
-                            </section>
-                        </section>
-                    </a>
-
-                    <a href="#" class="product__links">
-                        <section href="#" class="product-col">
-
-                            <section href="#" class="product-item">
-                                    <div class="product-img">
-                                        <img src="/images/product/p1.png" >
-                                    </div>
-            
-                                    <section class="product-desc">
-                                        <h3 class="product-name">
-                                            <a href="#" class="product__links">
-                                                iPhone 11
-                                            </a>
-                                        </h3>
-                                        <span class="product-price">
-                                            $125.00
-                                        </span>
-
-                                    </section>
-                                            
-                            </section>
-                            
-                            <section class="btn-product">
-                                <a href="#" class="detail-product">
-                                    Detail
-                                </a>
-                                <a href="#" class="buy-product">
-                                    Buy now
-                                </a>
-                            </section>
-                        </section>
-                    </a>
-                    
-                    
+                <!-- Top Replace -->
+                <section class="top-replace">
+                    <div class="author-replace">
+                        <div class="replace__sign-in">
+                            <a href="/modules/auth/signin.html" class="replace-sign-in__links">
+                                Sign in
+                            </a>
+                        </div>
 
                     
+                        <a href="/modules/auth/signup.html" class="replace-sign-up__links">
+                            Sign up
+                        </a>
+                    </div>
 
-                </section>   
+                    <a href="/modules/cart/cart.html" class="replace-cart__links">
+                        <img class="cart-img" src="/icon/icon-cart.jpg">
+                    </a>
+                </section>
+                
+            </section>
+
+
+            <!-- Category Name  -->
+            <section class="category-container">
+
+                <section class="category-left">
+                    <ul class="category-product__list">
+                        <li class="category-product__item">
+                            <a href="" class="category-product__links">
+                                iPhone
+                            
+                            </a>
+                        </li>
+
+                        <li class="category-product__item">
+                            <a href="" class="category-product__links">
+                                iPad
+
+                            </a>
+                        </li>
+
+                        <li class="category-product__item">
+                            <a href="" class="category-product__links">
+                                Macbook
+
+                            </a>
+                        </li>
+
+                        <li class="category-product__item">
+                            <a href="" class="category-product__links">
+                                Watch
+
+                            </a>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <section class="category-right">
+
+                    <div class="author">
+                        <div class="author__sign-in">
+                            <a href="/modules/auth/signin.html" class="sign-in__links">
+                                Sign in
+                            </a>
+                        </div>
+
+                        <a href="/modules/auth/signup.html" class="sign-up__links">
+                            Sign up
+                        </a>
+                    </div>
+
+                    <a href="/modules/cart/cart.html" class="cart__links">
+                        <img class="cart-img" src="/icon/icon-cart.jpg">
+                    </a>
+                </section>
 
             </section>
-            
-        </section>
 
 
+            <!-- Show Product -->
+            <section class="all-product">
+                
+                <section class="container-item">
+                    <section class="no-product">
+                    </section>
 
-        <!-- Pagination -->
-        <section class="product-end">
-            <section class="pagination">
-                <ul class="pagination__list">
-                    <li class="pagination__item">
-                        <a href="" class="pagination__links">
-                            <<
+                    <section class="product">
+
+                        <a href="#" class="product__links">
+                            <section href="#" class="product-col">
+
+                                <section href="#" class="product-item">
+                                        <div class="product-img">
+                                            <img src="/images/product/p1.png" >
+                                        </div>
+                
+                                        <section class="product-desc">
+                                            <h3 class="product-name">
+                                                <a href="#" class="product__links">
+                                                    iPhone 11
+                                                </a>
+                                            </h3>
+                                            <span class="product-price">
+                                                $125.00
+                                            </span>
+
+                                        </section>
+                                                
+                                </section>
+                                
+                                <section class="btn-product">
+                                    <a href="#" class="detail-product">
+                                        Detail
+                                    </a>
+                                    <a href="#" class="buy-product">
+                                        Buy now
+                                    </a>
+                                </section>
+                            </section>
                         </a>
-                    </li>
-    
-                    <li class="pagination__item">
-                        <a href="" class="pagination__links">
-                            1
+
+                        <a href="#" class="product__links">
+                            <section href="#" class="product-col">
+
+                                <section href="#" class="product-item">
+                                        <div class="product-img">
+                                            <img src="/images/product/p1.png" >
+                                        </div>
+                
+                                        <section class="product-desc">
+                                            <h3 class="product-name">
+                                                <a href="#" class="product__links">
+                                                    iPhone 11
+                                                </a>
+                                            </h3>
+                                            <span class="product-price">
+                                                $125.00
+                                            </span>
+
+                                        </section>
+                                                
+                                </section>
+                                
+                                <section class="btn-product">
+                                    <a href="#" class="detail-product">
+                                        Detail
+                                    </a>
+                                    <a href="#" class="buy-product">
+                                        Buy now
+                                    </a>
+                                </section>
+                            </section>
                         </a>
-                    </li>
-    
-                    <li class="pagination__item">
-                        <a href="" class="pagination__links">
-                            2
+
+                        <a href="#" class="product__links">
+                            <section href="#" class="product-col">
+
+                                <section href="#" class="product-item">
+                                        <div class="product-img">
+                                            <img src="/images/product/p1.png" >
+                                        </div>
+                
+                                        <section class="product-desc">
+                                            <h3 class="product-name">
+                                                <a href="#" class="product__links">
+                                                    iPhone 11
+                                                </a>
+                                            </h3>
+                                            <span class="product-price">
+                                                $125.00
+                                            </span>
+
+                                        </section>
+                                                
+                                </section>
+                                
+                                <section class="btn-product">
+                                    <a href="#" class="detail-product">
+                                        Detail
+                                    </a>
+                                    <a href="#" class="buy-product">
+                                        Buy now
+                                    </a>
+                                </section>
+                            </section>
                         </a>
-                    </li>
-    
-                    <li class="pagination__item">
-                        <a href="" class="pagination__links">
-                            3
+
+                        <a href="#" class="product__links">
+                            <section href="#" class="product-col">
+
+                                <section href="#" class="product-item">
+                                        <div class="product-img">
+                                            <img src="/images/product/p1.png" >
+                                        </div>
+                
+                                        <section class="product-desc">
+                                            <h3 class="product-name">
+                                                <a href="#" class="product__links">
+                                                    iPhone 11
+                                                </a>
+                                            </h3>
+                                            <span class="product-price">
+                                                $125.00
+                                            </span>
+
+                                        </section>
+                                                
+                                </section>
+                                
+                                <section class="btn-product">
+                                    <a href="#" class="detail-product">
+                                        Detail
+                                    </a>
+                                    <a href="#" class="buy-product">
+                                        Buy now
+                                    </a>
+                                </section>
+                            </section>
                         </a>
-                    </li>
-    
-                    <li class="pagination__item">
-                        <a href="" class="pagination__links">
-                            4
+
+                        <a href="#" class="product__links">
+                            <section href="#" class="product-col">
+
+                                <section href="#" class="product-item">
+                                        <div class="product-img">
+                                            <img src="/images/product/p1.png" >
+                                        </div>
+                
+                                        <section class="product-desc">
+                                            <h3 class="product-name">
+                                                <a href="#" class="product__links">
+                                                    iPhone 11
+                                                </a>
+                                            </h3>
+                                            <span class="product-price">
+                                                $125.00
+                                            </span>
+
+                                        </section>
+                                                
+                                </section>
+                                
+                                <section class="btn-product">
+                                    <a href="#" class="detail-product">
+                                        Detail
+                                    </a>
+                                    <a href="#" class="buy-product">
+                                        Buy now
+                                    </a>
+                                </section>
+                            </section>
                         </a>
-                    </li>
-    
-                    <li class="pagination__item">
-                        <a href="" class="pagination__links">
-                            >>
+
+                        <a href="#" class="product__links">
+                            <section href="#" class="product-col">
+
+                                <section href="#" class="product-item">
+                                        <div class="product-img">
+                                            <img src="/images/product/p1.png" >
+                                        </div>
+                
+                                        <section class="product-desc">
+                                            <h3 class="product-name">
+                                                <a href="#" class="product__links">
+                                                    iPhone 11
+                                                </a>
+                                            </h3>
+                                            <span class="product-price">
+                                                $125.00
+                                            </span>
+
+                                        </section>
+                                                
+                                </section>
+                                
+                                <section class="btn-product">
+                                    <a href="#" class="detail-product">
+                                        Detail
+                                    </a>
+                                    <a href="#" class="buy-product">
+                                        Buy now
+                                    </a>
+                                </section>
+                            </section>
                         </a>
-                    </li>
-    
-                </ul>
+
+                        <a href="#" class="product__links">
+                            <section href="#" class="product-col">
+
+                                <section href="#" class="product-item">
+                                        <div class="product-img">
+                                            <img src="/images/product/p1.png" >
+                                        </div>
+                
+                                        <section class="product-desc">
+                                            <h3 class="product-name">
+                                                <a href="#" class="product__links">
+                                                    iPhone 11
+                                                </a>
+                                            </h3>
+                                            <span class="product-price">
+                                                $125.00
+                                            </span>
+
+                                        </section>
+                                                
+                                </section>
+                                
+                                <section class="btn-product">
+                                    <a href="#" class="detail-product">
+                                        Detail
+                                    </a>
+                                    <a href="#" class="buy-product">
+                                        Buy now
+                                    </a>
+                                </section>
+                            </section>
+                        </a>
+
+                        <a href="#" class="product__links">
+                            <section href="#" class="product-col">
+
+                                <section href="#" class="product-item">
+                                        <div class="product-img">
+                                            <img src="/images/product/p1.png" >
+                                        </div>
+                
+                                        <section class="product-desc">
+                                            <h3 class="product-name">
+                                                <a href="#" class="product__links">
+                                                    iPhone 11
+                                                </a>
+                                            </h3>
+                                            <span class="product-price">
+                                                $125.00
+                                            </span>
+
+                                        </section>
+                                                
+                                </section>
+                                
+                                <section class="btn-product">
+                                    <a href="#" class="detail-product">
+                                        Detail
+                                    </a>
+                                    <a href="#" class="buy-product">
+                                        Buy now
+                                    </a>
+                                </section>
+                            </section>
+                        </a>
+
+                        <a href="#" class="product__links">
+                            <section href="#" class="product-col">
+
+                                <section href="#" class="product-item">
+                                        <div class="product-img">
+                                            <img src="/images/product/p1.png" >
+                                        </div>
+                
+                                        <section class="product-desc">
+                                            <h3 class="product-name">
+                                                <a href="#" class="product__links">
+                                                    iPhone 11
+                                                </a>
+                                            </h3>
+                                            <span class="product-price">
+                                                $125.00
+                                            </span>
+
+                                        </section>
+                                                
+                                </section>
+                                
+                                <section class="btn-product">
+                                    <a href="#" class="detail-product">
+                                        Detail
+                                    </a>
+                                    <a href="#" class="buy-product">
+                                        Buy now
+                                    </a>
+                                </section>
+                            </section>
+                        </a>
+
+                        <a href="#" class="product__links">
+                            <section href="#" class="product-col">
+
+                                <section href="#" class="product-item">
+                                        <div class="product-img">
+                                            <img src="/images/product/p1.png" >
+                                        </div>
+                
+                                        <section class="product-desc">
+                                            <h3 class="product-name">
+                                                <a href="#" class="product__links">
+                                                    iPhone 11
+                                                </a>
+                                            </h3>
+                                            <span class="product-price">
+                                                $125.00
+                                            </span>
+
+                                        </section>
+                                                
+                                </section>
+                                
+                                <section class="btn-product">
+                                    <a href="#" class="detail-product">
+                                        Detail
+                                    </a>
+                                    <a href="#" class="buy-product">
+                                        Buy now
+                                    </a>
+                                </section>
+                            </section>
+                        </a>
+
+                        <a href="#" class="product__links">
+                            <section href="#" class="product-col">
+
+                                <section href="#" class="product-item">
+                                        <div class="product-img">
+                                            <img src="/images/product/p1.png" >
+                                        </div>
+                
+                                        <section class="product-desc">
+                                            <h3 class="product-name">
+                                                <a href="#" class="product__links">
+                                                    iPhone 11
+                                                </a>
+                                            </h3>
+                                            <span class="product-price">
+                                                $125.00
+                                            </span>
+
+                                        </section>
+                                                
+                                </section>
+                                
+                                <section class="btn-product">
+                                    <a href="#" class="detail-product">
+                                        Detail
+                                    </a>
+                                    <a href="#" class="buy-product">
+                                        Buy now
+                                    </a>
+                                </section>
+                            </section>
+                        </a>
+
+                        <a href="#" class="product__links">
+                            <section href="#" class="product-col">
+
+                                <section href="#" class="product-item">
+                                        <div class="product-img">
+                                            <img src="/images/product/p1.png" >
+                                        </div>
+                
+                                        <section class="product-desc">
+                                            <h3 class="product-name">
+                                                <a href="#" class="product__links">
+                                                    iPhone 11
+                                                </a>
+                                            </h3>
+                                            <span class="product-price">
+                                                $125.00
+                                            </span>
+
+                                        </section>
+                                                
+                                </section>
+                                
+                                <section class="btn-product">
+                                    <a href="#" class="detail-product">
+                                        Detail
+                                    </a>
+                                    <a href="#" class="buy-product">
+                                        Buy now
+                                    </a>
+                                </section>
+                            </section>
+                        </a>
+
+                        <a href="#" class="product__links">
+                            <section href="#" class="product-col">
+
+                                <section href="#" class="product-item">
+                                        <div class="product-img">
+                                            <img src="/images/product/p1.png" >
+                                        </div>
+                
+                                        <section class="product-desc">
+                                            <h3 class="product-name">
+                                                <a href="#" class="product__links">
+                                                    iPhone 11
+                                                </a>
+                                            </h3>
+                                            <span class="product-price">
+                                                $125.00
+                                            </span>
+
+                                        </section>
+                                                
+                                </section>
+                                
+                                <section class="btn-product">
+                                    <a href="#" class="detail-product">
+                                        Detail
+                                    </a>
+                                    <a href="#" class="buy-product">
+                                        Buy now
+                                    </a>
+                                </section>
+                            </section>
+                        </a>
+
+                        <a href="#" class="product__links">
+                            <section href="#" class="product-col">
+
+                                <section href="#" class="product-item">
+                                        <div class="product-img">
+                                            <img src="/images/product/p1.png" >
+                                        </div>
+                
+                                        <section class="product-desc">
+                                            <h3 class="product-name">
+                                                <a href="#" class="product__links">
+                                                    iPhone 11
+                                                </a>
+                                            </h3>
+                                            <span class="product-price">
+                                                $125.00
+                                            </span>
+
+                                        </section>
+                                                
+                                </section>
+                                
+                                <section class="btn-product">
+                                    <a href="#" class="detail-product">
+                                        Detail
+                                    </a>
+                                    <a href="#" class="buy-product">
+                                        Buy now
+                                    </a>
+                                </section>
+                            </section>
+                        </a>
+
+                        <a href="#" class="product__links">
+                            <section href="#" class="product-col">
+
+                                <section href="#" class="product-item">
+                                        <div class="product-img">
+                                            <img src="/images/product/p1.png" >
+                                        </div>
+                
+                                        <section class="product-desc">
+                                            <h3 class="product-name">
+                                                <a href="#" class="product__links">
+                                                    iPhone 11
+                                                </a>
+                                            </h3>
+                                            <span class="product-price">
+                                                $125.00
+                                            </span>
+
+                                        </section>
+                                                
+                                </section>
+                                
+                                <section class="btn-product">
+                                    <a href="#" class="detail-product">
+                                        Detail
+                                    </a>
+                                    <a href="#" class="buy-product">
+                                        Buy now
+                                    </a>
+                                </section>
+                            </section>
+                        </a>
+                    </section>   
+
+                </section>
+                
             </section>
-        </section>
 
+            <!-- Pagination -->
+            <section class="product-end">
+                <section class="pagination">
+                    <ul class="pagination__list">
+                        <li class="pagination__item">
+                            <a href="" class="pagination__links">
+                                <<
+                            </a>
+                        </li>
+        
+                        <li class="pagination__item">
+                            <a href="" class="pagination__links">
+                                1
+                            </a>
+                        </li>
+        
+                        <li class="pagination__item">
+                            <a href="" class="pagination__links">
+                                2
+                            </a>
+                        </li>
+        
+                        <li class="pagination__item">
+                            <a href="" class="pagination__links">
+                                3
+                            </a>
+                        </li>
+        
+                        <li class="pagination__item">
+                            <a href="" class="pagination__links">
+                                4
+                            </a>
+                        </li>
+        
+                        <li class="pagination__item">
+                            <a href="" class="pagination__links">
+                                >>
+                            </a>
+                        </li>
+        
+                    </ul>
+                </section>
+            </section>
 
-    </main>
+        </main>
 
-
-
-    <!-- /Product -->
-<body>
-</body>
+        <!-- /Product -->
+    </body>
 </html>
