@@ -15,11 +15,12 @@ body {
     margin-top: 4rem;
 }
 
+
+
 // Service - Top
 
 .service-top {
-    margin-left: 1rem;
-
+    
     .service__title-one {
         @extend %title-one;
     }
@@ -90,6 +91,13 @@ body {
     }
 }
 
+
+// .service-container {
+//     .service-grid {
+//         margin: 60px 40px;
+//     }
+
+// }
 .service-container {
     display: flex;
     flex-direction: column;
