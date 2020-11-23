@@ -1,7 +1,4 @@
 var s = `
-    <!-- Header -->
-
-    <!-- nav mobile  -->
     <input type="checkbox" id="hidden-show-nav" hidden>
 
     <label class="open-nav" for="hidden-show-nav">
@@ -11,22 +8,17 @@ var s = `
     <label class="close-nav" for="hidden-show-nav">
         <i class="icon-exit"></i>
     </label>
-    <!-- nav mobile  -->
 
     <label for="hidden-show-nav" class="nav-overlay"></label>
 
     <header class="header box-shadow-on-mobile-tablet">
         <nav class="header-navbars">
-
-            <!-- title/name website -->
             <section class="navbars-title">
                 <a href="./index.html" class="navbars-title__link">
                     <h1>Apple Store</h1>
                 </a>
             </section>
-            <!-- /title/name website -->
 
-            <!-- list category -->
             <menu class="navbars-menu">
                 <ul class="menu-list">
                     <li class="list-item active">
@@ -55,11 +47,8 @@ var s = `
                     </li>
                 </ul>
             </menu>
-            <!-- /list category -->
 
-            <!-- footer -->
             <footer class="navbars-info">
-                <!-- copyright -->
                 <section class="info-brief">
                     <p>
                         &copy; Copyright &copy;
@@ -71,9 +60,7 @@ var s = `
                         All right reserved | Development by MyTeam.
                     </p>
                 </section>
-                <!-- /copyright -->
 
-                <!-- social contact -->
                 <menu class="info-social">
                     <ul class="social-list">
                         <li class="social-item">
@@ -104,24 +91,18 @@ var s = `
                         </li>
                     </ul>
                 </menu>
-                <!-- /social contact -->
             </footer>
-            <!-- /footer -->
-
         </nav>
     </header>
-
-    <!-- /Header -->
 `
 
 var divElement = document.querySelector(".templateStringHeader");
 divElement.innerHTML = s;
 
-// fix bug nav mobile
-// which will be triggered when the window resizes
-$( window ).bind("resize", function(){
+$(window).bind("resize", function(){
     var widthBrowser = $(document).width();
     var inputTypeCheckboxElement = document.querySelector("#hidden-show-nav");
+    
     if(widthBrowser > 739) 
         inputTypeCheckboxElement.checked = false;
 });

@@ -161,4 +161,28 @@ body {
   color: rgba(0, 0, 0, 0.7);
   font-weight: 500;
 }
+
+@media screen and (max-width: 1023px) {
+  .header {
+    min-width: 30rem;
+    transform: translateX(-150%);
+    opacity: 0;
+    transition: all linear 0.26s;
+  }
+  .blog-container {
+    width: 100%;
+  }
+  .blog-container .blog-grid {
+    flex-direction: column;
+  }
+  .blog-container .pagination {
+    display: block;
+  }
+  .blog-container .footer-container {
+    display: block;
+  }
+  .blog-container .blog-grid {
+    width: 95%;
+  }
+}
 /*# sourceMappingURL=blog.css.map */

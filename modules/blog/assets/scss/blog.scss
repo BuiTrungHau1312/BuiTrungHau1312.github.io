@@ -91,4 +91,39 @@ body {
 }
 // End - Center
 
+//RESPONSIVE 
+//*Mobile and PC
 
+@media screen and (max-width: 1023px ) {
+
+    .header {
+        min-width: 30rem;
+        transform: translateX(-150%);
+        opacity: 0;
+        transition: all linear 0.26s;
+    }
+
+    .blog-container {
+        width: 100%;
+        .blog-grid {
+            flex-direction: column;
+        }
+        
+        .pagination {
+            display: block;
+        }
+        .footer-container {
+            display: block;
+        }
+
+    }
+
+    .blog-container {
+        .blog-grid {
+            width: 95%;
+        }
+    }
+
+    .    
+
+}

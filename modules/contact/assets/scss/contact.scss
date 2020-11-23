@@ -141,3 +141,32 @@ body {
     }
 }
 // End - Center
+
+//RESPONSIVE
+
+//Mobile and PC
+
+@media screen and (max-width: 1023px) {
+
+    header. {
+        min-width: 30rem;
+        transform: translateX(-150%);
+        opacity: 0;
+        transition: all linear 0.26s;
+    }
+
+    .contact-container {
+        .contact-center {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-center__left {
+            width: 100%;
+        }
+
+
+    }
+
+
+
+}

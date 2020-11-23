@@ -303,5 +303,12 @@ body .main .all-content-about .top-about {
   .history .history-left .his-content {
     width: 100%;
   }
+  .statistical-container {
+    margin-left: -40px;
+  }
+  .footer-container {
+    margin-left: -60px;
+    width: 114%;
+  }
 }
 /*# sourceMappingURL=about.css.map */
