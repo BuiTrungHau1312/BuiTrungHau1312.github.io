@@ -108,6 +108,20 @@ var s = `
             </footer>
             <!-- /footer -->
 
+            <!-- auth on mobile -->
+                <section class="auth-header-mobile">
+                    <div class="author-replace">
+                        <div class="replace__sign-in">
+                            <a href="/modules/auth/signin.html" class="replace-sign-in__links">
+                                Sign in
+                            </a>
+                        </div>
+                    
+                        <a href="/modules/auth/signup.html" class="replace-sign-up__links">
+                            Sign up
+                        </a>
+                    </div>
+                </section>
         </nav>
     </header>
 

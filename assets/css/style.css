@@ -1,4 +1,4 @@
-.pagination__list .pagination__item .pagination__links {
+.pagination__list .pagination__item .pagination__links, .author-replace .replace__sign-in .replace-sign-in__links {
   display: block;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
@@ -81,6 +81,15 @@ body .app {
   display: flex;
   justify-content: flex-end;
   overflow: hidden;
+}
+
+.auth-header-mobile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.2rem;
+  display: none;
 }
 
 .slide-show .dot, .header .header-navbars, .header-navbars .navbars-menu .menu-list, .menu-list .list-item, .header-navbars .navbars-info, .navbars-info .info-social .social-list, .feature .feature-icon, .btn-contact, .item-statistical {
@@ -381,6 +390,35 @@ body .app {
 .author-container .div-author .register:hover {
   opacity: 0.8;
   text-decoration: underline;
+}
+
+.author-replace .replace__sign-in {
+  display: flex;
+  background-color: #FFC300;
+  height: 4.2rem;
+  width: 10rem;
+  border-radius: 6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.author-replace .replace__sign-in .replace-sign-in__links {
+  color: #FFF;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.author-replace .replace-sign-up__links {
+  color: #FFC300;
+  width: 10rem;
+  font-size: 1.6rem;
+  margin: 0 1.4rem 0 1.4rem;
+  text-transform: capitalize;
+  text-decoration: underline;
+  text-align: center;
 }
 
 .slide-show {
@@ -822,10 +860,29 @@ body .app {
 /* Mobile: width < 740px*/
 @media only screen and (max-width: 46.1875em) {
   .header {
-    min-width: 30rem;
+    min-width: 23rem;
     transform: translateX(-150%);
     opacity: 0;
     transition: all linear 0.26s;
+  }
+  .auth-header-mobile {
+    display: flex;
+  }
+  .auth-header-mobile .author-replace {
+    display: flex;
+    align-items: center;
+  }
+  .auth-header-mobile .author-replace .replace__sign-in {
+    background-color: transparent;
+  }
+  .auth-header-mobile .author-replace .replace__sign-in .replace-sign-in__links {
+    text-decoration: underline;
+    color: #FFC300;
+    font-size: 1.6rem;
+  }
+  .auth-header-mobile .author-replace .replace-sign-up__links {
+    font-size: 1.6rem;
+    margin: 0 0 0 0;
   }
   .box-shadow-on-mobile-tablet {
     box-shadow: 0 1px 4px 6px rgba(0, 0, 0, 0.3);
@@ -833,10 +890,15 @@ body .app {
   .open-nav {
     opacity: 1;
     display: block;
+    top: 1.0%;
+    font-size: 2.8rem;
   }
   .close-nav {
     opacity: 0;
     display: block;
+    top: 1.06rem;
+    margin-left: -3.4rem;
+    font-size: 2.8rem;
   }
   .container {
     width: 100%;

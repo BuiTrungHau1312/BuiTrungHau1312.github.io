@@ -32,100 +32,6 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* .icon-facebook:before {
-    content: "\ea90";
-}
-
-.icon-instagram:before {
-    content: "\ea92";
-}
-
-.icon-telegram:before {
-    content: "\ea95";
-}
-
-.icon-twitter:before {
-  content: "\ea96";
-}
-.icon-bars:before {
-  content: "\e900";
-}
-.icon-office:before {
-  content: "\e903";
-}
-.icon-newspaper:before {
-  content: "\e904";
-}
-.icon-quill:before {
-  content: "\e907";
-}
-.icon-images:before {
-  content: "\e90e";
-}
-.icon-phone:before {
-  content: "\e942";
-}
-.icon-location2:before {
-  content: "\e948";
-}
-.icon-compass:before {
-  content: "\e949";
-}
-.icon-map2:before {
-  content: "\e94c";
-}
-.icon-users:before {
-  content: "\e972";
-}
-.icon-user-tie:before {
-  content: "\e976";
-}
-.icon-spinner2:before {
-  content: "\e97b";
-}
-.icon-lock:before {
-  content: "\e98f";
-}
-.icon-menu:before {
-  content: "\e9bd";
-}
-.icon-bookmarks:before {
-  content: "\e9d3";
-}
-.icon-sun:before {
-  content: "\e9d4";
-}
-.icon-brightness-contrast:before {
-  content: "\e9d6";
-}
-.icon-heart:before {
-  content: "\e9da";
-}
-.icon-plus:before {
-  content: "\ea0a";
-}
-.icon-cross:before {
-  content: "\ea0f";
-}
-
-.icon-checkmark:before {
-  content: "\ea10";
-}
-.icon-checkmark2:before {
-  content: "\ea11";
-}
-.icon-enter:before {
-  content: "\ea13";
-}
-.icon-exit:before {
-  content: "\ea14";
-}
-.icon-streetsign:before {
-  content: "\e903";
-} */
-
-/* ----------- */
-
 .icon-instagram1:before {
   content: "\e90d";
   color: #e4405f;
@@ -138,6 +44,9 @@
 }
 .icon-local_grocery_store:before {
   content: "\e902";
+}
+.icon-shopping-bag:before {
+  content: "\e914";
 }
 .icon-shopping-cart1:before {
   content: "\e903";
